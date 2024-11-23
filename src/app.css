@@ -1,0 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body,
+html {
+	font-family: Roboto, sans-serif;
+	scroll-behavior: smooth;
+}
+
+.banner {
+	background-position: center;
+	background-size: cover;
+	background-color: #0c14b4;
+	min-height: 600px;
+	font-family: Poppins, sans-serif;
+}
+
+.banner::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at top, rgba(255, 255, 255, 0.8), transparent 60%);
+	pointer-events: none;
+}
+
+.footer-container {
+	min-height: 150px;
+	background-color: #442289;
+	padding: 0 0;
+	margin: 0 0;
+}
+
+.title {
+	font-family: Poppins, sans-serif;
+}
+
+.banner-text {
+	font-style: italic;
+	font-weight: bold;
+	display: inline-block;
+	transform: rotate(-2.75deg);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.content {
+	font-family: Roboto, sans-serif;
+	max-width: 800px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 36px;
+	@apply pt-16 border-b border-slate-300 font-poppins;
+}
+
+.section {
+	@apply flex flex-col gap-5;
+}
+
+.section > p {
+	@apply text-lg;
+}
+
+.wideBtn {
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+	@apply w-full block bg-bingo-blue text-white text-center border border-bingo-green hover:bg-bingo-green transition-all px-6 py-3 text-lg;
+}
