@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte'
 
-	let urlBuyTickets = 'https://buy.stripe.com/test_7sIaFxf1DfX1bvO8ww'
-	let urlDonate = 'https://donate.stripe.com/test_dR66ph9HjbGLbvO7st'
+	let urlBuyTickets = import.meta.env.VITE_URL_TICKETS
+	let urlDonate = import.meta.env.VITE_URL_DONATE
 
 	let navLinks = [
 		{ href: '#', label: 'HOME' },
