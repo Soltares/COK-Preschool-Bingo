@@ -49,7 +49,7 @@
 			your friends, and let's make it a night to remember!
 		</p>
 
-		<div class="m-auto w-fit border rounded-3xl p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg">
+		<div class="m-auto w-fit border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg">
 			<p>📅 Date: Friday, March 21st</p>
 			<p>
 				📍 <a href="https://maps.app.goo.gl/6oiRYDuMY6NwXdXH8" class="underline text-bingo-blue" target="_blank" rel="noopener noreferrer"
@@ -111,12 +111,12 @@
 		<h1>QUESTIONS</h1>
 		<p>For any questions or concerns, please contact:</p>
 		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
-			<div class="w-80 border p-4 px-10 rounded-xl bg-slate-50">
+			<div class="w-80 border p-4 px-10 bg-slate-50">
 				<p class="underline">Rebecca Wood - {@render bingo()} Chair</p>
 				<a class="text-bingo-blue" href="mailto:bingo@christourking.net">bingo@christourking.net</a>
 				<p>609-213-2310</p>
 			</div>
-			<div class="w-80 border p-4 px-10 rounded-xl bg-slate-50">
+			<div class="w-80 border p-4 px-10 bg-slate-50">
 				<p class="underline">Colleen Gambril</p>
 				<a class="text-bingo-blue" href="mailto:colleen@christourking.net">colleen@christourking.net</a>
 				<p>410-836-0141</p>
