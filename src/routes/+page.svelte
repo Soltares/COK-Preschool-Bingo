@@ -1,15 +1,24 @@
 <script lang="ts">
-	import Header from '$lib/Header.svelte'
+	import Header from '$lib/Header.svelte';
 
-	let urlBuyTickets = import.meta.env.VITE_URL_TICKETS
-	let urlDonate = import.meta.env.VITE_URL_DONATE
+	let urlBuyTickets = import.meta.env.VITE_URL_TICKETS;
+	let urlDonate = import.meta.env.VITE_URL_DONATE;
 
 	let navLinks = [
 		{ href: '#', label: 'HOME' },
 		{ href: '#about', label: 'ABOUT' },
 		{ href: '#where', label: 'WHERE' },
+	  { href: '#food', label: 'FOOD' },
 		{ href: '#buy', label: 'TICKETS' }
-	]
+	];
+
+	let sponsors = [
+		{ name: "ReckTech, LLC", logoUrl: "/recktech-logo.png", linkUrl: "https://recktech.co" }
+	];
+
+	let trucks = [
+		{ name: "Man I Love Food", logoUrl: "/milfs.jpg", linkUrl: "https://milfs-hot-spot.square.site" }
+	];
 </script>
 
 {#snippet bingo()}
@@ -33,15 +42,16 @@
 			FOR CHRIST OUR KING PRESCHOOL'S 3<sup>rd</sup> ANNUAL {@render bingo()} NIGHT! 🎉
 		</h1>
 		<p>
-			Join us for the biggest fundraiser of the year on Friday, March 21st, 2025—an evening filled with fun, prizes, and community spirit! Food trucks
-			will be ready to serve dinner starting at 5:00 p.m., so come early to enjoy delicious options before the {@render bingo()} action kicks off at 7:00
+			Join us for the biggest fundraiser of the year on Friday, March 21st, 2025—an evening filled with fun, 
+			prizes, and community spirit! Food trucks will be ready to serve dinner starting at 5:00 p.m., 
+			so come early to enjoy delicious options before the {@render bingo()} action kicks off at 7:00
 			p.m.
 		</p>
 
 		<p>
-			Your ticket includes {@render bingo()} boards for all 20 games, each offering the chance to win fantastic basket prizes valued at over $100—some
-			even higher! You can also try your luck with raffle and 50/50 tickets available for purchase throughout the night, along with additional games to
-			keep the excitement going.
+			Your ticket includes {@render bingo()} boards for all 20 games, each offering the chance to win fantastic 
+			basket prizes valued at over $100—some even higher! You can also try your luck with raffle and 50/50 tickets 
+			available for purchase throughout the night, along with additional games to keep the excitement going.
 		</p>
 
 		<p>
@@ -49,14 +59,20 @@
 			your friends, and let's make it a night to remember!
 		</p>
 
-		<div class="m-auto w-fit border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg">
-			<p>📅 Date: Friday, March 21st</p>
-			<p>
-				📍 <a href="https://maps.app.goo.gl/6oiRYDuMY6NwXdXH8" class="underline text-bingo-blue" target="_blank" rel="noopener noreferrer"
-					>Location: 10 Lexington Avenue, Bel Air</a
-				>
-			</p>
-			<p>🎟️ Prizes, raffles, food trucks, and so much more!</p>
+		<div class="m-auto w-full border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg">
+			<div class="justify-items-center">
+				<p>📅 Date: Friday, March 21st</p>
+				<p>
+					📍 <a href="https://maps.app.goo.gl/6oiRYDuMY6NwXdXH8" 
+							  class="underline text-bingo-blue" 
+							  target="_blank" 
+							  rel="noopener noreferrer"
+						>
+						  Location: 10 Lexington Avenue, Bel Air
+					</a>
+				</p>
+				<p>🎟️ Prizes, raffles, food trucks, and so much more!</p>
+			</div>
 		</div>
 	</div>
 
@@ -64,38 +80,72 @@
 	<div id="buy" class="section">
 		<h1>🎟️ BUY TICKETS</h1>
 		<p>
-			Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! Tickets are $25 each if purchased in advance, with multiple payment options
-			available. You can pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently
-			through our website for an additional $1 convenience fee per ticket. Tickets bought online will still be eligible for raffle prizes as you can claim
-			your physical ticket at the door. Tickets on {@render bingo()} day will be available at the door for $30.
+			Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! Tickets are $25 each if 
+			purchased in advance, with multiple payment options available. You can pay by cash (drop off to 
+			Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently
+			through our website for an additional $1 convenience fee per ticket. Tickets bought online will still be 
+			eligible for raffle prizes as you can claim your physical ticket at the door. Tickets on {@render bingo()} 
+			day will be available at the door for $30.
 		</p>
 
 		<p>Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your understanding.</p>
 
 		<p>
-			Come prepared with cash for the event, as there will be plenty of extras for sale, including {@render bingo()} stamps, sodas, water, and delicious
-			baked goods. Plus, don't miss out on our exciting raffles and 50/50 game for more chances to win! We can't wait to see you there for an unforgettable
-			night of {@render bingo()} and fun!
+			Come prepared with cash for the event, as there will be plenty of extras for sale, including {@render bingo()} 
+			stamps, sodas, water, and delicious baked goods. Plus, don't miss out on our exciting raffles and 50/50 game 
+			for more chances to win! We can't wait to see you there for an unforgettable night of {@render bingo()} and fun!
 		</p>
 		<a href={urlBuyTickets} class="wideBtn"> BUY TICKETS </a>
 	</div>
 
-	<div id="" class="section">
-		<h1>NOT INTO BINGO?</h1>
+	<div id="food" class="section">
+		<h1>COME HUNGRY, LEAVE HAPPY</h1>
 		<p>
-			Join us for a delicious start to {@render bingo()} Night with food trucks available from 5:00 p.m. onwards! Arrive early to explore a variety of
-			tasty dinner options while supporting Christ Our King Preschool, as a portion of each purchase goes directly to benefit our school. Even if you can't
-			stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground. It's a wonderful chance to connect
-			with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you
-			there!
+			Join us for a delicious start to {@render bingo()} Night with food trucks available from 5:00 p.m. 
+			onwards! Arrive early to explore a variety of tasty dinner options while supporting Christ Our King 
+			Preschool, as a portion of each purchase goes directly to benefit our school. Even if you can't 
+			stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground. 
+			It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious 
+			meal. Don't miss this community gathering for a great cause—see you there!
 		</p>
+		<p>
+			Wondering what to eat? We've got you covered with these local food trucks:
+		</p>
+		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
+			{#each trucks as truck}
+				<div class="justify-items-center w-50 border p-4 px-10 bg-slate-50">
+					{#if truck.logoUrl}
+						{#if truck.linkUrl}
+							<a 
+								href={truck.linkUrl} 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								class="text-bingo-blue hover:underline"
+							>
+								<img 
+									src={truck.logoUrl} 
+									alt={truck.name + ' logo'} 
+									class="mb-2 max-h-20 object-contain rounded-full" 
+								/>
+							</a>
+						{/if}
+					{/if}
+					<h3 class="font-semibold text-lg mb-1">{truck.name}</h3>
+
+				</div>
+			{/each}
+		</div>
+		<p>Just want to give some money? Use the button below to donate directly.</p>
 		<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 	</div>
 
 	<!-- Contact/Area Container -->
 	<div id="where" class="section">
 		<h1>WHERE TO FIND US</h1>
-		<p>Christ Our King Preschool is located in Christ Our King Presbyterian Church across from Ring Factory Elementary on 924 Emmorton Rd.</p>
+		<p>
+			Christ Our King Preschool is located in Christ Our King Presbyterian Church across from Ring Factory 
+			Elementary on 924 Emmorton Rd.
+		</p>
 		<!-- Google Map -->
 		<iframe
 			class="h-[30rem]"
@@ -105,6 +155,41 @@
 			referrerpolicy="no-referrer-when-downgrade"
 		></iframe>
 	</div>
+
+	<section class="section py-8">
+		<h1>OUR SPONSORS</h1>
+		<p>
+			A heartfelt thank you to our sponsors for their generous support. Their contributions help 
+			Christ Our King Preschool provide memorable experiences, valuable resources, and enriching 
+			opportunities for our students.
+		</p>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
+			{#each sponsors as sponsor}
+				<div class="justify-items-center w-50 border p-4 px-10 bg-slate-50">
+					{#if sponsor.logoUrl}
+						{#if sponsor.linkUrl}
+							<a 
+								href={sponsor.linkUrl} 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								class="text-bingo-blue hover:underline"
+							>
+								<img 
+									src={sponsor.logoUrl} 
+									alt={sponsor.name + ' logo'} 
+									class="mb-2 max-h-20 object-contain" 
+								/>
+							</a>
+						{/if}
+					{/if}
+					<h3 class="font-semibold text-lg mb-1">{sponsor.name}</h3>
+					
+				</div>
+			{/each}
+		</div>
+	</section>
+
 
 	<!-- Contact/Area Container -->
 	<div class="section">
