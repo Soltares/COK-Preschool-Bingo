@@ -13,7 +13,8 @@
 	];
 
 	let sponsors = [
-		{ name: "ReckTech, LLC", logoUrl: "/recktech-logo.png", linkUrl: "https://recktech.co" }
+		{ name: "ReckTech, LLC", logoUrl: "/recktech-logo.png", linkUrl: "https://recktech.co" },
+		{ name: "Affirmatech Inc", logoUrl: "/affirmatech-logo.jpg", linkUrl: "https://affirmatech.com", class: "rounded-full" },
 	];
 
 	let trucks = [
@@ -156,7 +157,7 @@
 		></iframe>
 	</div>
 
-	<section class="section py-8">
+	<div class="section py-8">
 		<h1>OUR SPONSORS</h1>
 		<p>
 			A heartfelt thank you to our sponsors for their generous support. Their contributions help 
@@ -167,28 +168,26 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
 			{#each sponsors as sponsor}
 				<div class="justify-items-center w-50 border p-4 px-10 bg-slate-50">
-					{#if sponsor.logoUrl}
-						{#if sponsor.linkUrl}
-							<a 
-								href={sponsor.linkUrl} 
-								target="_blank" 
-								rel="noopener noreferrer" 
-								class="text-bingo-blue hover:underline"
-							>
-								<img 
-									src={sponsor.logoUrl} 
-									alt={sponsor.name + ' logo'} 
-									class="mb-2 max-h-20 object-contain" 
-								/>
-							</a>
-						{/if}
+					{#if sponsor.logoUrl && sponsor.linkUrl}
+						<a 
+							href={sponsor.linkUrl} 
+							target="_blank" 
+							rel="noopener noreferrer" 
+							class="text-bingo-blue hover:underline"
+						>
+							<img 
+								src={sponsor.logoUrl} 
+								alt={sponsor.name + ' logo'} 
+								class="mb-2 max-h-20 object-contain {sponsor.class}"
+							/>
+						</a>
 					{/if}
 					<h3 class="font-semibold text-lg mb-1">{sponsor.name}</h3>
 					
 				</div>
 			{/each}
 		</div>
-	</section>
+	</div>
 
 
 	<!-- Contact/Area Container -->
