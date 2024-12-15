@@ -9,7 +9,7 @@
 	<div class="min-h-40 md:min-h-32 z-10">
 		<a
 			href={urlBuyTickets}
-			class="hover:black z-10 border bg-bingo-blue text-white px-6 py-3 hover:bg-black hover:font-semibold transition-all hover:outline hover:outline-offset-2"
+			class="block w-40 font-semibold m-auto hover:black z-10 border bg-bingo-blue text-white px-6 py-3 hover:bg-bingo-green transition-all hover:scale-110  cursor-pointer"
 		>
 			BUY TICKETS
 		</a>
