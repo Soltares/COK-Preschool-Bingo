@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
+	import SponsorList from '$lib/SponsorList.svelte';
 
 	let urlBuyTickets = import.meta.env.VITE_URL_TICKETS;
 	let urlDonate = import.meta.env.VITE_URL_DONATE;
@@ -112,30 +113,7 @@
 		<p>
 			Wondering what to eat? We've got you covered with these local food trucks:
 		</p>
-		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
-			{#each trucks as truck}
-				<div class="justify-items-center w-50 border p-4 px-10 bg-slate-50">
-					{#if truck.logoUrl}
-						{#if truck.linkUrl}
-							<a 
-								href={truck.linkUrl} 
-								target="_blank" 
-								rel="noopener noreferrer" 
-								class="text-bingo-blue hover:underline"
-							>
-								<img 
-									src={truck.logoUrl} 
-									alt={truck.name + ' logo'} 
-									class="mb-2 max-h-20 object-contain rounded-full" 
-								/>
-							</a>
-						{/if}
-					{/if}
-					<h3 class="font-semibold text-lg mb-1">{truck.name}</h3>
-
-				</div>
-			{/each}
-		</div>
+		<SponsorList list={trucks} />
 		<p>Just want to give some money? Use the button below to donate directly.</p>
 		<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 	</div>
@@ -157,36 +135,14 @@
 		></iframe>
 	</div>
 
-	<div class="section py-8">
+	<div class="section">
 		<h1>OUR SPONSORS</h1>
 		<p>
 			A heartfelt thank you to our sponsors for their generous support. Their contributions help 
 			Christ Our King Preschool provide memorable experiences, valuable resources, and enriching 
 			opportunities for our students.
 		</p>
-
-		<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">
-			{#each sponsors as sponsor}
-				<div class="justify-items-center w-50 border p-4 px-10 bg-slate-50">
-					{#if sponsor.logoUrl && sponsor.linkUrl}
-						<a 
-							href={sponsor.linkUrl} 
-							target="_blank" 
-							rel="noopener noreferrer" 
-							class="text-bingo-blue hover:underline"
-						>
-							<img 
-								src={sponsor.logoUrl} 
-								alt={sponsor.name + ' logo'} 
-								class="mb-2 max-h-20 object-contain {sponsor.class}"
-							/>
-						</a>
-					{/if}
-					<h3 class="font-semibold text-lg mb-1">{sponsor.name}</h3>
-					
-				</div>
-			{/each}
-		</div>
+		<SponsorList list={sponsors} />
 	</div>
 
 
