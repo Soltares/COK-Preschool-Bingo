@@ -14,8 +14,11 @@
 	];
 
 	let sponsors = [
+		{ name: "Christ Our King Presbyterian Church", logoUrl: "/cok-logo.png", linkUrl: "https://christourking.net/" },
 		{ name: "ReckTech, LLC", logoUrl: "/recktech-logo.png", linkUrl: "https://recktech.co" },
-		{ name: "Affirmatech Inc", logoUrl: "/affirmatech-logo.jpg", linkUrl: "https://affirmatech.com", class: "rounded-full" },
+		{ name: "Affirmatech Inc", logoUrl: "/affirmatech-logo.jpg", linkUrl: "https://affirmatech.com" },
+		{ name: "Mr. V Laser Design", logoUrl: "/mr-v-logo.png", linkUrl: "https://mrvlaserdesign.com/", class: '!rounded-none' },
+		{ name: "Nancy Hines", logoUrl: '/nancyh.png' },
 	];
 
 	let trucks = [
@@ -61,8 +64,8 @@
 			your friends, and let's make it a night to remember!
 		</p>
 
-		<div class="m-auto w-full border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg">
-			<div class="justify-items-center">
+		<div class="m-auto w-full border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg justify-items-center">
+			<div class="m-auto">
 				<p>📅 Date: Friday, March 21st</p>
 				<p>
 					📍 <a href="https://maps.app.goo.gl/6oiRYDuMY6NwXdXH8" 
@@ -142,7 +145,7 @@
 			Christ Our King Preschool provide memorable experiences, valuable resources, and enriching 
 			opportunities for our students.
 		</p>
-		<SponsorList list={sponsors} />
+		<SponsorList list={sponsors} maxColumns={3}  />
 	</div>
 
 
