@@ -85,7 +85,7 @@
 			Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! Tickets are $25 each if 
 			purchased in advance, with multiple payment options available. You can pay by cash (drop off to 
 			Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently
-			through our website for an additional $1.06 convenience fee per ticket. Tickets bought online will still be 
+			through our website for an additional $1.06 service fee per ticket. Tickets bought online will still be 
 			eligible for raffle prizes as you can claim your physical ticket at the door. Tickets on {@render bingo()} 
 			day will be available at the door for $30.
 		</p>
