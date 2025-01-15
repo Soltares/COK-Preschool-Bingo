@@ -5,7 +5,13 @@
 body,
 html {
 	font-family: Roboto, sans-serif;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth;	
+}
+
+body {
+	min-height: 100vh;
+	height: 100vh;
+	@apply pt-14;
 }
 
 .banner {

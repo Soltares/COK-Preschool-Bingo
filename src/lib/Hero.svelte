@@ -1,16 +1,13 @@
 <script lang="ts">
-	let { urlBuyTickets } = $props()
+	let { urlBuyTickets = import.meta.env.VITE_URL_TICKETS } = $props()
 </script>
 
 <!-- Header with image -->
-<header class="banner grid grid-rows-[auto_1fr_auto] text-center relative items-center mt-14" id="home">
+<header class="banner grid grid-rows-[auto_1fr_auto] text-center relative items-center" id="home">
 	<img class="m-auto z-10 h-[100px] sm:[h-100px] md:h-[125px] bg-white rounded-full mt-5 pointer-events-none" src="logo.png" alt="Logo" />
 	<div class="banner-text text-[60px] md:text-[90px] text-white z-10 mx-3 md:mx-10 select-none mb-4">BASKET BINGO NIGHT!</div>
 	<div class="min-h-40 md:min-h-32 z-10">
-		<a
-			href={urlBuyTickets}
-			class="block w-40 font-semibold m-auto hover:black z-10 border bg-bingo-blue text-white px-6 py-3 hover:bg-bingo-green transition-all hover:scale-110  cursor-pointer"
-		>
+		<a href={urlBuyTickets} class="block w-40 font-semibold m-auto hover:black z-10 border bg-bingo-blue text-white px-6 py-3 hover:bg-bingo-green transition-all hover:scale-110 cursor-pointer">
 			BUY TICKETS
 		</a>
 	</div>
