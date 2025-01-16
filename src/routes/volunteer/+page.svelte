@@ -10,7 +10,7 @@
 
 	<!-- svelte-ignore a11y_missing_attribute -->
 	<iframe
-		class="border-t border-b py-4 bg-neutral-50"
+		class="border-t border-b py-4 bg-slate-100"
 		src="https://docs.google.com/forms/d/e/1FAIpQLScTT0jUwpPhxzDQWMRPHOCiTqnZq78ldsl0EpH5owqkmXVsIw/viewform?embedded=true"
 		height="800"
 		frameborder="0"
