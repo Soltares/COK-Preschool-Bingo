@@ -10,7 +10,10 @@ export let sponsors = [
 	{ name: 'Nancy Hines', logoUrl: '/nancyh.png' }
 ]
 
-export let trucks = [{ name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' }]
+export let trucks = [
+	{ name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
+	{ name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' }
+]
 
 export let contacts = [
 	{ name: 'Rebecca Wood - Bingo Chair', email: 'bingo@christourking.net', phone: '609-213-2310' },
