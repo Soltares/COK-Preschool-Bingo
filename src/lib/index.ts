@@ -7,7 +7,8 @@ export let sponsors = [
 	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
 	{ name: 'Affirmatech Inc', logoUrl: '/affirmatech-logo.jpg', linkUrl: 'https://affirmatech.com' },
 	{ name: 'Mr. V Laser Design', logoUrl: '/mr-v-logo.png', linkUrl: 'https://mrvlaserdesign.com/', class: '!rounded-none' },
-	{ name: 'Nancy Hines', logoUrl: '/nancyh.png' }
+	{ name: 'Nancy Hines', logoUrl: '/nancyh.png' },
+	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
 ]
 
 export let trucks = [
