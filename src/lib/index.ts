@@ -10,7 +10,10 @@ export let sponsors = [
 	{ name: 'Nancy Hines', logoUrl: '/nancyh.png' },
 	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
 	{ name: 'Aberdeen IronBirds', logoUrl: '/Aberdeen_IronBirds_logo.svg', linkUrl: 'https://www.milb.com/aberdeen', class: '!rounded-none' },
-	{ name: "Klein's ShopRite", logoUrl: '/ShopRite_(United_States)_logo.svg', linkUrl: 'https://kleinsfm.com/locations/shoprite-at-the-festival-at-bel-air/', class: '!rounded-none' }
+	{ name: "Klein's ShopRite", logoUrl: '/ShopRite_(United_States)_logo.svg', linkUrl: 'https://kleinsfm.com/locations/shoprite-at-the-festival-at-bel-air/', class: '!rounded-none' },
+	// { name: 'Noodles & Company', logoUrl: '/noodlesAndCompany-logo.svg', linkUrl: 'https://locations.noodles.com/md/bel-air/621-bel-air-road' },
+	{ name: 'Honeygrow', logoUrl: '/honeygrow-logo.png', linkUrl: 'https://www.honeygrow.com/location/bel-air/', class: '!rounded-none' },
+	{ name: 'Saladworks', logoUrl: '/saladworks-logo.png', linkUrl: 'https://restaurants.saladworks.com/md/bel-air/617-bel-air-road/', class: 'scale-110' },
 ]
 
 export let trucks = [
