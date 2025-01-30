@@ -14,6 +14,9 @@ export let sponsors = [
 	// { name: 'Noodles & Company', logoUrl: '/noodlesAndCompany-logo.svg', linkUrl: 'https://locations.noodles.com/md/bel-air/621-bel-air-road' },
 	{ name: 'Honeygrow', logoUrl: '/honeygrow-logo.png', linkUrl: 'https://www.honeygrow.com/location/bel-air/', class: '!rounded-none' },
 	{ name: 'Saladworks', logoUrl: '/saladworks-logo.png', linkUrl: 'https://restaurants.saladworks.com/md/bel-air/617-bel-air-road/', class: 'scale-110' },
+	{ name: 'Horizon Cinemas', logoUrl: '/horizon-cinemas-logo.png', linkUrl: 'https://horizoncinemas.com/home', class: 'bg-black px-2 !rounded' },
+	{ name: 'Ice World', logoUrl: '/ice-world-logo.png', linkUrl: 'https://www.iceworld.com/', class: 'scale-150' },
+	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3' },
 ]
 
 export let trucks = [
