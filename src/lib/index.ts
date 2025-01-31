@@ -17,6 +17,10 @@ export let sponsors = [
 	{ name: 'Horizon Cinemas', logoUrl: '/horizon-cinemas-logo.png', linkUrl: 'https://horizoncinemas.com/home', class: 'bg-black px-2 !rounded' },
 	{ name: 'Ice World', logoUrl: '/ice-world-logo.png', linkUrl: 'https://www.iceworld.com/', class: 'scale-150' },
 	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3' },
+	{ name: 'Lean Kitchen', logoUrl: '/lean-kitchen-logo.webp', linkUrl: 'https://www.leankitchenco.com/bel-air/', class: '!rounded-lg' },
+	{ name: 'Poke Bowl', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
+	{ name: 'Liberatore\'s', logoUrl: '/liberatores-logo.png', linkUrl: 'https://www.liberatores.com/bel-air', class: '!rounded-lg px-2 scale-125' },
+	{ name: 'Liz Baxter', logoUrl: '/liz-baxter.png' },
 ]
 
 export let trucks = [
