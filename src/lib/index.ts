@@ -19,8 +19,20 @@ export let sponsors = [
 	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3' },
 	{ name: 'Lean Kitchen', logoUrl: '/lean-kitchen-logo.webp', linkUrl: 'https://www.leankitchenco.com/bel-air/', class: '!rounded-lg' },
 	{ name: 'Poke Bowl', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
-	{ name: 'Liberatore\'s', logoUrl: '/liberatores-logo.png', linkUrl: 'https://www.liberatores.com/bel-air', class: '!rounded-lg px-2 scale-125' },
+	{ name: "Liberatore's", logoUrl: '/liberatores-logo.png', linkUrl: 'https://www.liberatores.com/bel-air', class: '!rounded-lg px-2 scale-125' },
 	{ name: 'Liz Baxter', logoUrl: '/liz-baxter.png' },
+	{ name: 'Greek Village', logoUrl: '/greek-village-logo.jpg', linkUrl: 'http://greekvillagebelair.com/', class: '!rounded-lg' },
+	{ name: 'Bagel Works', logoUrl: '/bagel-works-logo.jpg', linkUrl: 'https://www.facebook.com/15dbiel/', class: '!rounded-lg' },
+	{ name: 'Imagine Nail Salon', logoUrl: '/imagine-nail-salon-logo.png', linkUrl: 'https://www.imaginenail.com/', class: '' },
+	{ name: 'Greenbrier Wine & Spirits', logoUrl: '/greenbrier-wine-logo.png', linkUrl: 'https://maps.app.goo.gl/ht2tgchNQ29di7sBA', class: '!rounded-lg' },
+	{ name: 'Philly Pretzel Factory', logoUrl: '/philly-pretzel-factory-logo.webp', linkUrl: 'https://phillypretzelfactory.com/locations/bel-air-md/', class: '!rounded-lg' },
+	{
+		name: 'Pizza Hut',
+		logoUrl: '/Pizza_Hut_classic_logo.svg.png',
+		linkUrl: 'https://locations.pizzahut.com/md/bel-air/1216-churchville-rd?utm_medium=organic&utm_source=local&utm_campaign=googlelistings&utm_content=website&utm_term=299580',
+		class: '!rounded-none'
+	},
+	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' }
 ]
 
 export let trucks = [
