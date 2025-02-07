@@ -32,7 +32,8 @@ export let sponsors = [
 		linkUrl: 'https://locations.pizzahut.com/md/bel-air/1216-churchville-rd?utm_medium=organic&utm_source=local&utm_campaign=googlelistings&utm_content=website&utm_term=299580',
 		class: '!rounded-none'
 	},
-	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' }
+	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
+	{ name: 'Inspired Edge Coaching', logoUrl: 'inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' }
 ]
 
 export let trucks = [
