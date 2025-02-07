@@ -33,7 +33,8 @@ export let sponsors = [
 		class: '!rounded-none'
 	},
 	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
-	{ name: 'Inspired Edge Coaching', logoUrl: 'inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' }
+	{ name: 'Inspired Edge Coaching', logoUrl: '/inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' },
+	{ name: "Chung's Martial Arts", logoUrl: '/chungs-logodark.png', linkUrl: 'https://chungsmartialarts.net/', class: '!rounded-none' }
 ]
 
 export let trucks = [
