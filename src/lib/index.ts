@@ -34,7 +34,11 @@ export let sponsors = [
 	},
 	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
 	{ name: 'Inspired Edge Coaching', logoUrl: '/inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' },
-	{ name: "Chung's Martial Arts", logoUrl: '/chungs-logodark.png', linkUrl: 'https://chungsmartialarts.net/', class: '!rounded-none' }
+	{ name: "Chung's Martial Arts", logoUrl: '/chungs-logodark.png', linkUrl: 'https://chungsmartialarts.net/', class: '!rounded-none' },
+	{ name: 'Jones Junction', logoUrl: '/jones-junction-logo.avif', linkUrl: 'https://www.jonesjunction.com/', class: '!rounded-none' },
+	{ name: 'Harford Communitiy College', logoUrl: '/hcc-logo.png', linkUrl: 'https://www.harford.edu/', class: '!rounded-lg bg-blue-950 px-2' },
+	{ name: 'Riverside Pub & Grille', logoUrl: '/the-pub-logo.png', linkUrl: 'https://riversidepubngrille.com/', class: '!rounded-lg bg-black p-2 scale-110' },
+	{ name: 'Enotria', logoUrl: '/enotria-logo.webp', linkUrl: 'https://enotriarestaurant.com/', class: '!rounded-none' }
 ]
 
 export let trucks = [
