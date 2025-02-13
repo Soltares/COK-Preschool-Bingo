@@ -38,7 +38,8 @@ export let sponsors = [
 	{ name: 'Jones Junction', logoUrl: '/jones-junction-logo.avif', linkUrl: 'https://www.jonesjunction.com/', class: '!rounded-none' },
 	{ name: 'Harford Communitiy College', logoUrl: '/hcc-logo.png', linkUrl: 'https://www.harford.edu/', class: '!rounded-lg bg-blue-950 px-2' },
 	{ name: 'Riverside Pub & Grille', logoUrl: '/the-pub-logo.png', linkUrl: 'https://riversidepubngrille.com/', class: '!rounded-lg bg-black p-2 scale-110' },
-	{ name: 'Enotria', logoUrl: '/enotria-logo.webp', linkUrl: 'https://enotriarestaurant.com/', class: '!rounded-none' }
+	{ name: 'Enotria', logoUrl: '/enotria-logo.webp', linkUrl: 'https://enotriarestaurant.com/', class: '!rounded-none' },
+	{ name: 'Ferguson Golf Institute', logoUrl: '/fgi-logo.avif', linkUrl: 'https://www.fgigolf.com/', class: '!rounded-none scale-125' }
 ]
 
 export let trucks = [
