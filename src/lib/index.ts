@@ -40,7 +40,7 @@ export let sponsors = [
 	{ name: 'Riverside Pub & Grille', logoUrl: '/the-pub-logo.png', linkUrl: 'https://riversidepubngrille.com/', class: '!rounded-lg bg-black p-2 scale-110' },
 	{ name: 'Enotria', logoUrl: '/enotria-logo.webp', linkUrl: 'https://enotriarestaurant.com/', class: '!rounded-none' },
 	{ name: 'Ferguson Golf Institute', logoUrl: '/fgi-logo.avif', linkUrl: 'https://www.fgigolf.com/', class: '!rounded-none scale-125' },
-	
+
 	{ name: 'Buontempo Brothers', logoUrl: '/buontempo-bros-logo.webp', linkUrl: 'https://www.buontempos.com/', class: '!rounded-none scale-125' },
 	{ name: 'Independent Brewing Company', logoUrl: '/independent-brewing-co-logo.png', linkUrl: 'https://www.independentbrew.com/', class: '!rounded-none' },
 	{ name: 'The Mannequin on Main', logoUrl: '/mannequin-on-main-logo.jpg', linkUrl: 'https://www.facebook.com/p/The-Mannequin-on-Main-100063787592471/', class: 'scale-125' },
@@ -50,6 +50,9 @@ export let sponsors = [
 	{ name: 'Newberry', logoUrl: '/newberry-logo.png', linkUrl: 'https://newberrydonuts.com/', class: '!rounded-none' },
 	{ name: 'Wegmans', logoUrl: '/wegmans-logo.min.svg', linkUrl: 'https://www.wegmans.com/stores/bel-air-md/', clfss: '!rounded-none' },
 	{ name: 'Mission BBQ', logoUrl: '/mission-bbq-logo.png', linkUrl: 'https://mission-bbq.com/', class: '!rounded-none scale-110' },
+
+	{ name: 'India Garden', logoUrl: '/india-garden-logo.webp', linkUrl: 'https://www.indiagardenus.com/', class: '!rounded-none scale-125' },
+	{ name: 'Target', logoUrl: '/target-logo.png', linkUrl: 'https://www.target.com/', class: '!rounded-none' }
 ]
 
 export let trucks = [
