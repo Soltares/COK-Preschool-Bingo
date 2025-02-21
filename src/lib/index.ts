@@ -52,7 +52,9 @@ export let sponsors = [
 	{ name: 'Mission BBQ', logoUrl: '/mission-bbq-logo.png', linkUrl: 'https://mission-bbq.com/', class: '!rounded-none scale-110' },
 
 	{ name: 'India Garden', logoUrl: '/india-garden-logo.webp', linkUrl: 'https://www.indiagardenus.com/', class: '!rounded-none scale-125' },
-	{ name: 'Target', logoUrl: '/target-logo.png', linkUrl: 'https://www.target.com/', class: '!rounded-none' }
+	{ name: 'Target', logoUrl: '/target-logo.png', linkUrl: 'https://www.target.com/', class: '!rounded-none' },
+	{ name: 'Friendship Wine & Liquor', logoUrl: '/friendship-wine-and-liquor.jpg', linkUrl: 'https://www.friendshipwine.com/', class: 'scale-125' },
+
 ]
 
 export let trucks = [
