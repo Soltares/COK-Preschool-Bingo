@@ -54,6 +54,11 @@ export let sponsors = [
 	{ name: 'India Garden', logoUrl: '/india-garden-logo.webp', linkUrl: 'https://www.indiagardenus.com/', class: '!rounded-none scale-125' },
 	{ name: 'Target', logoUrl: '/target-logo.png', linkUrl: 'https://www.target.com/', class: '!rounded-none' },
 	{ name: 'Friendship Wine & Liquor', logoUrl: '/friendship-wine-and-liquor.jpg', linkUrl: 'https://www.friendshipwine.com/', class: 'scale-125' },
+	{ name: 'Prigel Family Creamery', logoUrl: '/prigel-family-farm-logo.avif', linkUrl: 'https://www.prigelfamilycreamery.com/', class: 'scale-125' },
+	{ name: 'Happy Nails & Spa', logoUrl: '/happy-nails-and-spa-logo.png', linkUrl: 'https://happynailsspabelair.com/', class: 'scale-110 !rounded-lg bg-black px-3' },
+	{ name: 'Pairings Bistro & Village Market', logoUrl: '/Pairings-logo.webp', linkUrl: 'https://pairingsbistro.com/market-cafe/', class: '!rounded-lg scale-110' },
+	{ name: 'Redner\'s', logoUrl: '/redners-logo.webp', linkUrl: 'https://www.rednersmarkets.com/', class: '!rounded-none scale-125' },
+	{ name: 'KIDS FIRST Swim Schools', logoUrl: '/kids-first-logo.png', linkUrl: 'https://kidsfirstswimschools.com/locations/belair/', class: '!rounded-none scale-110' },
 
 ]
 
