@@ -18,7 +18,7 @@ export let sponsors = [
 	{ name: 'Ice World', logoUrl: '/ice-world-logo.png', linkUrl: 'https://www.iceworld.com/', class: 'scale-150' },
 	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3' },
 	{ name: 'Lean Kitchen', logoUrl: '/lean-kitchen-logo.webp', linkUrl: 'https://www.leankitchenco.com/bel-air/', class: '!rounded-lg' },
-	{ name: 'Poke Bowl', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
+	{ name: 'Poke Bowl Bel Air', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
 	{ name: "Liberatore's", logoUrl: '/liberatores-logo.png', linkUrl: 'https://www.liberatores.com/bel-air', class: '!rounded-lg px-2 scale-125' },
 	{ name: 'Liz Baxter', logoUrl: '/liz-baxter.png' },
 	{ name: 'Greek Village', logoUrl: '/greek-village-logo.jpg', linkUrl: 'http://greekvillagebelair.com/', class: '!rounded-lg' },
@@ -59,7 +59,12 @@ export let sponsors = [
 	{ name: 'Pairings Bistro & Village Market', logoUrl: '/Pairings-logo.webp', linkUrl: 'https://pairingsbistro.com/market-cafe/', class: '!rounded-lg scale-110' },
 	{ name: "Redner's", logoUrl: '/redners-logo.webp', linkUrl: 'https://www.rednersmarkets.com/', class: '!rounded-none scale-125' },
 	{ name: 'KIDS FIRST Swim Schools', logoUrl: '/kids-first-logo.png', linkUrl: 'https://kidsfirstswimschools.com/locations/belair/', class: '!rounded-none scale-110' },
-	{ name: 'Glamour Nails & Spa', logoUrl: '/glamour-nails-logo.png', linkUrl: 'https://glamournailsbelair.com/', class: '!rounded-lg bg-[#232323] py-1 px-4 scale-110' }
+	{ name: 'Glamour Nails & Spa', logoUrl: '/glamour-nails-logo.png', linkUrl: 'https://glamournailsbelair.com/', class: '!rounded-lg bg-[#232323] py-1 px-4 scale-110' },
+	{ name: 'Lauren Merryman Massage Practitioner', logoUrl: '/lauren-merryman-logo.jpg', linkUrl: 'https://www.facebook.com/lmerrymanRMP/', class: 'scale-110' },
+	{ name: 'Box Hill Pizzeria & Crabcakes', logoUrl: '/Box-Hill-Pizzeria-Logo.png', linkUrl: 'https://www.boxhillpizzarestaurant.com/', class: '!rounded-none scale-110' },
+	{ name: 'The Last Toy Store', logoUrl: '/the-last-toy-store-logo.png', linkUrl: 'https://thelasttoystore.com/', class: '!rounded-none scale-110' },
+	{ name: 'Poke Bowl Abingdon', logoUrl: '/poke-bowl-abingdon-logo.png', linkUrl: 'https://pokebowlabingdon.com/', class: '!rounded-none scale-110' },
+	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' }
 ]
 
 export let trucks = [
