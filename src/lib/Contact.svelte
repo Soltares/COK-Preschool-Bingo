@@ -2,7 +2,7 @@
 	import { contacts } from '$lib'
 </script>
 
-<div class="section">
+<div id="questions" class="section">
 	<h1>QUESTIONS</h1>
 	<p>For any questions or concerns, please contact:</p>
 	<div class="grid grid-cols-1 md:grid-cols-2 w-full text-lg justify-items-center md:p-5 gap-3">

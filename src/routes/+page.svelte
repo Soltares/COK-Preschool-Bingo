@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sponsors, trucks, urlBuyTickets, urlDonate } from '$lib'
+	import { contacts, sponsors, trucks, urlBuyTickets, urlDonate } from '$lib'
 	import Contact from '$lib/Contact.svelte'
 	import SponsorList from '$lib/SponsorList.svelte'
 
@@ -47,12 +47,13 @@
 	<p>
 		Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are $25 each if purchased in advance, with multiple payment options available. You can
 			pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional $1.06 service fee per
-			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Pre-sale tickets are currently sold-out but
-			a few tickets are reserved for purchase at the door.{/if} Tickets on {@render bingo()}
-		day will be available at the door for $30 until all seats are filled.
+			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out, but
+			if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
 	</p>
-
-	<p>Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your understanding.</p>
+	<p>
+		Tickets on {@render bingo()} day will be available at the door for $30 until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your
+		understanding.
+	</p>
 
 	<p>
 		Come prepared with cash for the event, as there will be plenty of extras for sale, including {@render bingo()}
@@ -63,10 +64,10 @@
 	{#if enableTicketSales}
 		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
 	{:else}
-		<div class="wideBtn hover:bg-bingo-blue select-none !cursor-default">
-			<p class="font-bold text-xl">Pre-sale tickets are sold out</p>
-			<p>Last tickets at the door are first-come, first-serve!</p>
-		</div>
+		<a href="#questions" class="wideBtn">
+			<p class="font-bold text-xl">Online tickets are sold out!</p>
+			<p>Please send ticket requests to {contacts[0]?.email}</p>
+		</a>
 	{/if}
 </div>
 
