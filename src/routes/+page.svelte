@@ -56,7 +56,7 @@
 		stamps, sodas, water, and delicious baked goods. Plus, don't miss out on our exciting raffles and 50/50 game for more chances to win! We can't wait to see you there for an unforgettable night of
 		{@render bingo()} and fun!
 	</p>
-	<a href={urlBuyTickets} class="wideBtn"> BUY TICKETS </a>
+	<p>Pre-sale Tickets are sold out.</p>
 </div>
 
 <div id="food" class="section">
