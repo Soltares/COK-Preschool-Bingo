@@ -2,6 +2,8 @@
 	import { sponsors, trucks, urlBuyTickets, urlDonate } from '$lib'
 	import Contact from '$lib/Contact.svelte'
 	import SponsorList from '$lib/SponsorList.svelte'
+
+	let enableTicketSales = import.meta.env.VITE_ENABLE_TICKET_SALES == 1
 </script>
 
 {#snippet bingo()}
@@ -43,10 +45,11 @@
 <div id="buy" class="section">
 	<h1>🎟️ BUY TICKETS</h1>
 	<p>
-		Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! Tickets are $25 each if purchased in advance, with multiple payment options available. You can pay by cash (drop off to Colleen
-		Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional $1.06 service fee per ticket. Tickets bought online will still
-		be eligible for raffle prizes as you can claim your physical ticket at the door. Tickets on {@render bingo()}
-		day will be available at the door for $30.
+		Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are $25 each if purchased in advance, with multiple payment options available. You can
+			pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional $1.06 service fee per
+			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Pre-sale tickets are currently sold-out but
+			a few tickets are reserved for purchase at the door.{/if} Tickets on {@render bingo()}
+		day will be available at the door for $30 until all seats are filled.
 	</p>
 
 	<p>Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your understanding.</p>
@@ -56,7 +59,15 @@
 		stamps, sodas, water, and delicious baked goods. Plus, don't miss out on our exciting raffles and 50/50 game for more chances to win! We can't wait to see you there for an unforgettable night of
 		{@render bingo()} and fun!
 	</p>
-	<p>Pre-sale Tickets are sold out.</p>
+
+	{#if enableTicketSales}
+		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
+	{:else}
+		<div class="wideBtn hover:bg-bingo-blue select-none !cursor-default">
+			<p class="font-bold text-xl">Pre-sale tickets are sold out</p>
+			<p>Last tickets at the door are first-come, first-serve!</p>
+		</div>
+	{/if}
 </div>
 
 <div id="food" class="section">
