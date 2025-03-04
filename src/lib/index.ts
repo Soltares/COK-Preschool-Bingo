@@ -64,7 +64,15 @@ export let sponsors = [
 	{ name: 'Box Hill Pizzeria & Crabcakes', logoUrl: '/Box-Hill-Pizzeria-Logo.png', linkUrl: 'https://www.boxhillpizzarestaurant.com/', class: '!rounded-none scale-110' },
 	{ name: 'The Last Toy Store', logoUrl: '/the-last-toy-store-logo.png', linkUrl: 'https://thelasttoystore.com/', class: '!rounded-none scale-110' },
 	{ name: 'Poke Bowl Abingdon', logoUrl: '/poke-bowl-abingdon-logo.png', linkUrl: 'https://pokebowlabingdon.com/', class: '!rounded-none scale-110' },
-	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' }
+	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' },
+	{ name: 'Earth Wood & Fire', logoUrl: '/earth-wood-fire-logo.png', linkUrl: 'https://www.earthwoodfire.com/fallston/', class: '!rounded-lg scale-110' },
+	// { name: 'The Nest', logoUrl: '/the-nest-logo.jpg', linkUrl: 'https://www.thenestonmainbelair.com/', class: '!rounded-lg scale-125' },
+	{ name: 'The Tile Shop', logoUrl: '/the-tile-shop-logo.svg', linkUrl: 'https://www.tileshop.com/store-locator/bel-air', class: '!rounded-lg scale-125' },
+	{ name: 'Weis Markets', logoUrl: '/weis-markets-logo.webp', linkUrl: 'https://www.weismarkets.com/stores/weis-markets-bel-air-172/4291', class: '!rounded-none scale-110' },
+	{ name: 'CoK Women\'s Prayer Group', logoUrl: '/womens-prayer-group-logo.png', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
+	{ name: 'Angles Hair Team', logoUrl: '/angles-logo.png', linkUrl: 'https://angleshairteam.com/', class: '!rounded-none' },
+	{ name: 'Merle Norman Cosmetics', logoUrl: '/merle-norman-logo.jpg', linkUrl: 'https://www.merlenorman.com/homepage', class: '!rounded-none' },
+	{ name: 'Petals \'n Posies', logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4' },
 ]
 
 export let trucks = [
