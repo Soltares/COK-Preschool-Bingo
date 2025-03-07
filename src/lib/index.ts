@@ -72,7 +72,8 @@ export let sponsors = [
 	{ name: "CoK Women's Prayer Group", logoUrl: '/womens-prayer-group-logo.png', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
 	{ name: 'Angles Hair Team', logoUrl: '/angles-logo.png', linkUrl: 'https://angleshairteam.com/', class: '!rounded-none' },
 	{ name: 'Merle Norman Cosmetics', logoUrl: '/merle-norman-logo.jpg', linkUrl: 'https://www.merlenorman.com/homepage', class: '!rounded-lg bg-white px-2 scale-110' },
-	{ name: "Petals 'n Posies", logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4' }
+	{ name: "Petals 'n Posies", logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4' },
+	{ name: 'Route 24 Ale House', logoUrl: '/route-24-ale-house-logo.png', linkUrl: 'https://www.route24alehouse.com/', class: '!rounded-lg scale-110' }
 ]
 
 export let trucks = [
