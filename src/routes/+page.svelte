@@ -50,10 +50,10 @@
 			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out, but
 			if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
 	</p>
-	<p>
+	<!-- <p>
 		Tickets on {@render bingo()} day will be available at the door for $30 until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your
 		understanding.
-	</p>
+	</p> -->
 
 	<p>
 		Come prepared with cash for the event, as there will be plenty of extras for sale, including {@render bingo()}
@@ -61,6 +61,7 @@
 		{@render bingo()} and fun!
 	</p>
 
+	<p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>
 	{#if enableTicketSales}
 		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
 	{:else}
