@@ -73,7 +73,11 @@ export let sponsors = [
 	{ name: 'Angles Hair Team', logoUrl: '/angles-logo.png', linkUrl: 'https://angleshairteam.com/', class: '!rounded-none' },
 	{ name: 'Merle Norman Cosmetics', logoUrl: '/merle-norman-logo.jpg', linkUrl: 'https://www.merlenorman.com/homepage', class: '!rounded-lg bg-white px-2 scale-110' },
 	{ name: "Petals 'n Posies", logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4' },
-	{ name: 'Route 24 Ale House', logoUrl: '/route-24-ale-house-logo.png', linkUrl: 'https://www.route24alehouse.com/', class: '!rounded-lg scale-110' }
+	{ name: 'Route 24 Ale House', logoUrl: '/route-24-ale-house-logo.png', linkUrl: 'https://www.route24alehouse.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Rosedale Federal Savings', logoUrl: '/rosedale-federal-logo.png', linkUrl: 'https://www.rosedalefederal.com/who-we-are/abingdon-branch', class: '!rounded-lg scale-110' },
+	{ name: 'All About Word Art', logoUrl: '/all-about-word-art-logo.jpg', linkUrl: 'https://www.etsy.com/shop/allaboutwordart/', class: '!rounded-lg scale-110' },
+	{ name: 'Sacred Space Crafts', logoUrl: '/sacred-space-crafts-logo.webp', linkUrl: 'https://www.etsy.com/shop/sacredspacecraftsus', class: '!rounded-lg scale-110' },
+	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' }
 ]
 
 export let trucks = [
