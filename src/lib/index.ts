@@ -81,7 +81,10 @@ export let sponsors = [
 
 	{ name: 'Winters Run Golf Club', logoUrl: '/winters-run-golf-club-logo.png', linkUrl: 'https://www.wintersrun.com/', class: '!rounded-lg' },
 	{ name: 'Top Dog Golf Center', logoUrl: 'top-dog-golf-logo.webp', linkUrl: 'https://topdoggolfcenter.com/', class: '!rounded-lg scale-110' },
-	{ name: 'Ando\'s Market', logoUrl: 'andos-logo.avif', linkUrl: 'https://www.andos-market.com/', class: '!rounded-lg' },
+	{ name: "Ando's Market", logoUrl: 'andos-logo.avif', linkUrl: 'https://www.andos-market.com/', class: '!rounded-lg' },
+	{ name: 'Wine World Beer & Spirits', logoUrl: 'wine-world-logo.avif', linkUrl: 'https://www.mywineworld.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Corinne Rao', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Denise Recker', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' }
 ]
 
 export let trucks = [
