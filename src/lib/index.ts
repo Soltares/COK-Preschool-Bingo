@@ -77,7 +77,11 @@ export let sponsors = [
 	{ name: 'Rosedale Federal Savings', logoUrl: '/rosedale-federal-logo.png', linkUrl: 'https://www.rosedalefederal.com/who-we-are/abingdon-branch', class: '!rounded-lg scale-110' },
 	{ name: 'All About Word Art', logoUrl: '/all-about-word-art-logo.jpg', linkUrl: 'https://www.etsy.com/shop/allaboutwordart/', class: '!rounded-lg scale-110' },
 	{ name: 'Sacred Space Crafts', logoUrl: '/sacred-space-crafts-logo.webp', linkUrl: 'https://www.etsy.com/shop/sacredspacecraftsus', class: '!rounded-lg scale-110' },
-	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' }
+	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' },
+
+	{ name: 'Winters Run Golf Club', logoUrl: '/winters-run-golf-club-logo.png', linkUrl: 'https://www.wintersrun.com/', class: '!rounded-lg' },
+	{ name: 'Top Dog Golf Center', logoUrl: 'top-dog-golf-logo.webp', linkUrl: 'https://topdoggolfcenter.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Ando\'s Market', logoUrl: 'andos-logo.avif', linkUrl: 'https://www.andos-market.com/', class: '!rounded-lg' },
 ]
 
 export let trucks = [
