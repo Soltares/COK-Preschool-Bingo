@@ -66,7 +66,7 @@ export let sponsors = [
 	{ name: 'Poke Bowl Abingdon', logoUrl: '/poke-bowl-abingdon-logo.png', linkUrl: 'https://pokebowlabingdon.com/', class: '!rounded-none scale-110' },
 	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' },
 	{ name: 'Earth Wood & Fire', logoUrl: '/earth-wood-fire-logo.png', linkUrl: 'https://www.earthwoodfire.com/fallston/', class: '!rounded-lg scale-110' },
-	// { name: 'The Nest', logoUrl: '/the-nest-logo.jpg', linkUrl: 'https://www.thenestonmainbelair.com/', class: '!rounded-lg scale-125' },
+	{ name: 'The Nest', logoUrl: '/the-nest-logo.jpg', linkUrl: 'https://www.thenestonmainbelair.com/', class: '!rounded-lg scale-110 bg-white p-1' },
 	{ name: 'The Tile Shop', logoUrl: '/the-tile-shop-logo.svg', linkUrl: 'https://www.tileshop.com/store-locator/bel-air', class: '!rounded-lg scale-125' },
 	{ name: 'Weis Markets', logoUrl: '/weis-markets-logo.webp', linkUrl: 'https://www.weismarkets.com/stores/weis-markets-bel-air-172/4291', class: '!rounded-none scale-110' },
 	{ name: "CoK Women's Prayer Group", logoUrl: '/womens-prayer-group-logo.png', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
@@ -84,7 +84,10 @@ export let sponsors = [
 	{ name: "Ando's Market", logoUrl: 'andos-logo.avif', linkUrl: 'https://www.andos-market.com/', class: '!rounded-lg' },
 	{ name: 'Wine World Beer & Spirits', logoUrl: 'wine-world-logo.avif', linkUrl: 'https://www.mywineworld.com/', class: '!rounded-lg scale-110' },
 	{ name: 'Corinne Rao', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
-	{ name: 'Denise Recker', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' }
+	{ name: 'Denise Recker', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Joanna Reagan', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Bannach Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Prestileo Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' }
 ]
 
 export let trucks = [
