@@ -86,10 +86,11 @@ export let sponsors = [
 	{ name: 'Corinne Rao', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Denise Recker', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Joanna Reagan', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
-	{ name: 'Bannach Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
-	{ name: 'Prestileo Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'The Bannach Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'The Prestileo Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Arctic Circle', logoUrl: 'arctic-circle-logo.jpg', linkUrl: 'https://www.facebook.com/arcticcircle.icecream/', class: '!rounded-lg scale-110' },
-	{ name: 'Churchville Golf Center', logoUrl: 'churchville-golf-logo.png', linkUrl: 'http://www.churchvillegolf.com/Churchville_Golf_and_Putt_Putt/Home.html', class: '!rounded-lg scale-110' }
+	{ name: 'Churchville Golf Center', logoUrl: 'churchville-golf-logo.png', linkUrl: 'http://www.churchvillegolf.com/Churchville_Golf_and_Putt_Putt/Home.html', class: '!rounded-lg scale-110' },
+	{ name: 'The Cudia Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' }
 ]
 
 export let trucks = [
