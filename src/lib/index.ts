@@ -85,12 +85,19 @@ export let sponsors = [
 	{ name: 'Wine World Beer & Spirits', logoUrl: 'wine-world-logo.avif', linkUrl: 'https://www.mywineworld.com/', class: '!rounded-lg scale-110' },
 	{ name: 'Corinne Rao', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Denise Recker', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Dave Cooper', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Joanna Reagan', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'The Bannach Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'The Prestileo Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 	{ name: 'Arctic Circle', logoUrl: 'arctic-circle-logo.jpg', linkUrl: 'https://www.facebook.com/arcticcircle.icecream/', class: '!rounded-lg scale-110' },
 	{ name: 'Churchville Golf Center', logoUrl: 'churchville-golf-logo.png', linkUrl: 'http://www.churchvillegolf.com/Churchville_Golf_and_Putt_Putt/Home.html', class: '!rounded-lg scale-110' },
-	{ name: 'The Cudia Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' }
+	{ name: 'The Cudia Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'Young Chef\s Academy', logoUrl: 'young-chefs-academy-logo.svg', linkUrl: 'https://belairmd.youngchefsacademy.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Bella Tresse Salon', logoUrl: 'belle-tresse-salon-logo.jpg', linkUrl: 'https://www.bellatressesalon.net/', class: '!rounded-lg scale-110 bg-white' },
+	{ name: 'Costco', logoUrl: 'costco-logo.png', linkUrl: 'https://www.costco.com/warehouse-locations/white-marsh-md-208.html', class: '!rounded-lg scale-110' },
+	{ name: 'CoK Parish Life', logoUrl: '', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
+	{ name: 'CoK Deacons', logoUrl: '', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
+	{ name: 'The Srnec Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
 ]
 
 export let trucks = [
