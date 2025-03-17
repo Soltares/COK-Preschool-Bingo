@@ -72,7 +72,7 @@ export let sponsors = [
 	{ name: "CoK Women's Prayer Group", logoUrl: '/womens-prayer-group-logo.png', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
 	{ name: 'Angles Hair Team', logoUrl: '/angles-logo.png', linkUrl: 'https://angleshairteam.com/', class: '!rounded-none' },
 	{ name: 'Merle Norman Cosmetics', logoUrl: '/merle-norman-logo.jpg', linkUrl: 'https://www.merlenorman.com/homepage', class: '!rounded-lg bg-white px-2 scale-110' },
-	{ name: "Petals 'n Posies", logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4' },
+	{ name: "Petals 'n Posies", logoUrl: '/petals-n-posies-logo.png', linkUrl: 'https://www.petalsposiesatjonathans.com/', class: '!rounded-lg scale-125 bg-white pb-4 m-3' },
 	{ name: 'Route 24 Ale House', logoUrl: '/route-24-ale-house-logo.png', linkUrl: 'https://www.route24alehouse.com/', class: '!rounded-lg scale-110' },
 	{ name: 'Rosedale Federal Savings', logoUrl: '/rosedale-federal-logo.png', linkUrl: 'https://www.rosedalefederal.com/who-we-are/abingdon-branch', class: '!rounded-lg scale-110' },
 	{ name: 'All About Word Art', logoUrl: '/all-about-word-art-logo.jpg', linkUrl: 'https://www.etsy.com/shop/allaboutwordart/', class: '!rounded-lg scale-110' },
@@ -92,12 +92,16 @@ export let sponsors = [
 	{ name: 'Arctic Circle', logoUrl: 'arctic-circle-logo.jpg', linkUrl: 'https://www.facebook.com/arcticcircle.icecream/', class: '!rounded-lg scale-110' },
 	{ name: 'Churchville Golf Center', logoUrl: 'churchville-golf-logo.png', linkUrl: 'http://www.churchvillegolf.com/Churchville_Golf_and_Putt_Putt/Home.html', class: '!rounded-lg scale-110' },
 	{ name: 'The Cudia Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
-	{ name: 'Young Chef\s Academy', logoUrl: 'young-chefs-academy-logo.svg', linkUrl: 'https://belairmd.youngchefsacademy.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Young Chefs Academy', logoUrl: 'young-chefs-academy-logo.svg', linkUrl: 'https://belairmd.youngchefsacademy.com/', class: '!rounded-lg scale-110' },
 	{ name: 'Bella Tresse Salon', logoUrl: 'belle-tresse-salon-logo.jpg', linkUrl: 'https://www.bellatressesalon.net/', class: '!rounded-lg scale-110 bg-white' },
 	{ name: 'Costco', logoUrl: 'costco-logo.png', linkUrl: 'https://www.costco.com/warehouse-locations/white-marsh-md-208.html', class: '!rounded-lg scale-110' },
 	{ name: 'CoK Parish Life', logoUrl: '', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
 	{ name: 'CoK Deacons', logoUrl: '', linkUrl: 'https://christourking.net/welcome/whats-happening', class: '!rounded-lg scale-110' },
 	{ name: 'The Srnec Family', logoUrl: '', linkUrl: '', class: '!rounded-lg scale-110' },
+	{ name: 'X-Golf', logoUrl: 'xgolf-belair-logo.jpg', linkUrl: 'https://xgolfbelair.com/', class: '!rounded-lg scale-110 bg-white px-1' },
+	{ name: 'Outback Steakhouse', logoUrl: 'outback-logo.svg', linkUrl: 'https://locations.outback.com/maryland/bel-air/607-bel-air', class: '!rounded-lg scale-110 bg-[rgb(137,26,28)] px-2' },
+	{ name: "Capriotti's Sandwich Shop", logoUrl: 'capriottis-logo.webp', linkUrl: 'https://order.capriottis.com/store/9464', class: '!rounded-lg' },
+	{ name: 'Forest Hill Lanes', logoUrl: 'forest-hill-lanes-logo.png', linkUrl: 'https://foresthillbowl.com/', class: '!rounded-lg scale-125 bg-[#1f24c1] px-1 m-3' }
 ]
 
 export let trucks = [
