@@ -101,7 +101,9 @@ export let sponsors = [
 	{ name: 'X-Golf', logoUrl: 'xgolf-belair-logo.jpg', linkUrl: 'https://xgolfbelair.com/', class: '!rounded-lg scale-110 bg-white px-1' },
 	{ name: 'Outback Steakhouse', logoUrl: 'outback-logo.svg', linkUrl: 'https://locations.outback.com/maryland/bel-air/607-bel-air', class: '!rounded-lg scale-110 bg-[rgb(137,26,28)] px-2' },
 	{ name: "Capriotti's Sandwich Shop", logoUrl: 'capriottis-logo.webp', linkUrl: 'https://order.capriottis.com/store/9464', class: '!rounded-lg' },
-	{ name: 'Forest Hill Lanes', logoUrl: 'forest-hill-lanes-logo.png', linkUrl: 'https://foresthillbowl.com/', class: '!rounded-lg scale-125 bg-[#1f24c1] px-1 m-3' }
+	{ name: 'Forest Hill Lanes', logoUrl: 'forest-hill-lanes-logo.png', linkUrl: 'https://foresthillbowl.com/', class: '!rounded-lg scale-125 bg-[#1f24c1] px-1 m-3' },
+
+	{ name: 'Scentsy', logoUrl: 'scentsy-logo.svg', linkUrl: 'https://cbscent.scentsy.us', class: '!rounded-lg scale-110' }
 ]
 
 export let trucks = [

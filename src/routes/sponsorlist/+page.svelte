@@ -35,7 +35,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each sponsors.sort((a, b) => a.name.localeCompare(b.name)) as sponsor}
+			{#each [...sponsors].sort((a, b) => a.name.localeCompare(b.name)) as sponsor}
 				<tr class="border-b">
 					<td class="whitespace-nowrap">
 						{#if enableLinks && sponsor.linkUrl}
