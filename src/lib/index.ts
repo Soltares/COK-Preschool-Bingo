@@ -103,7 +103,9 @@ export let sponsors = [
 	{ name: "Capriotti's Sandwich Shop", logoUrl: 'capriottis-logo.webp', linkUrl: 'https://order.capriottis.com/store/9464', class: '!rounded-lg' },
 	{ name: 'Forest Hill Lanes', logoUrl: 'forest-hill-lanes-logo.png', linkUrl: 'https://foresthillbowl.com/', class: '!rounded-lg scale-125 bg-[#1f24c1] px-1 m-3' },
 
-	{ name: 'Scentsy', logoUrl: 'scentsy-logo.svg', linkUrl: 'https://cbscent.scentsy.us', class: '!rounded-lg scale-110' }
+	{ name: 'Scentsy', logoUrl: 'scentsy-logo.svg', linkUrl: 'https://cbscent.scentsy.us', class: '!rounded-lg scale-110' },
+	{ name: 'The Arena Club', logoUrl: 'The-Arena-Club-logo.webp', linkUrl: 'https://www.thearenaclub.com/', class: '!rounded-lg scale-110 bg-black p-3' },
+	{ name: 'Fisherman\'s Catch', logoUrl: 'fishermans-catch-logo.png', linkUrl: 'https://foresthillbowl.com', class: '!rounded-lg scale-110' },
 ]
 
 export let trucks = [
