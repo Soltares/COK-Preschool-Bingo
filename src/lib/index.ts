@@ -30,7 +30,7 @@ export let sponsors = [
 		name: 'Pizza Hut',
 		logoUrl: '/Pizza_Hut_classic_logo.svg.png',
 		linkUrl: 'https://locations.pizzahut.com/md/bel-air/1216-churchville-rd?utm_medium=organic&utm_source=local&utm_campaign=googlelistings&utm_content=website&utm_term=299580',
-		class: '!rounded-none'
+		class: '!rounded-none',
 	},
 	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
 	{ name: 'Inspired Edge Coaching', logoUrl: '/inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' },
@@ -105,16 +105,17 @@ export let sponsors = [
 
 	{ name: 'Scentsy', logoUrl: 'scentsy-logo.svg', linkUrl: 'https://cbscent.scentsy.us', class: '!rounded-lg scale-110' },
 	{ name: 'The Arena Club', logoUrl: 'The-Arena-Club-logo.webp', linkUrl: 'https://www.thearenaclub.com/', class: '!rounded-lg scale-110 bg-[#323232] p-3' },
-	{ name: 'Fisherman\'s Catch', logoUrl: 'fishermans-catch-logo.png', linkUrl: 'https://foresthillbowl.com/?page_id=67', class: '!rounded-lg scale-110' },
+	{ name: "Fisherman's Catch", logoUrl: 'fishermans-catch-logo.png', linkUrl: 'https://foresthillbowl.com/?page_id=67', class: '!rounded-lg scale-110' },
 	{ name: 'Wayback Burgers', logoUrl: 'wayback-burgers-logo.svg', linkUrl: 'https://waybackburgers.com/locations/us/maryland/bel-air/', class: '!rounded-lg scale-110 bg-[#212721] px-3' },
+	{ name: 'Baltimore Ravens', logoUrl: 'baltimore-ravens-logo.svg', linkUrl: 'https://www.baltimoreravens.com/', class: '!rounded-lg scale-125' },
 ]
 
 export let trucks = [
 	{ name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
-	{ name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' }
+	{ name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' },
 ]
 
 export let contacts = [
 	{ name: 'Rebecca Wood - Bingo Chair', email: 'bingo@christourking.net', phone: '609-213-2310' },
-	{ name: 'Colleen Gambril', email: 'colleen@christourking.net', phone: '410-836-0141' }
+	{ name: 'Colleen Gambril', email: 'colleen@christourking.net', phone: '410-836-0141' },
 ]
