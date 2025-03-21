@@ -108,6 +108,7 @@ export let sponsors = [
 	{ name: "Fisherman's Catch", logoUrl: 'fishermans-catch-logo.png', linkUrl: 'https://foresthillbowl.com/?page_id=67', class: '!rounded-lg scale-110' },
 	{ name: 'Wayback Burgers', logoUrl: 'wayback-burgers-logo.svg', linkUrl: 'https://waybackburgers.com/locations/us/maryland/bel-air/', class: '!rounded-lg scale-110 bg-[#212721] px-3' },
 	{ name: 'Baltimore Ravens', logoUrl: 'baltimore-ravens-logo.svg', linkUrl: 'https://www.baltimoreravens.com/', class: '!rounded-lg scale-125' },
+	{ name: 'Coffee Coffee', logoUrl: 'coffee-coffee-logo.jpg', linkUrl: 'https://www.coffeecoffee-online.com/', class: '!rounded-lg scale-125' },
 ]
 
 export let trucks = [
