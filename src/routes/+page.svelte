@@ -14,10 +14,12 @@
 <div id="about" class="section">
 	<h1>
 		<span class="font-bold text-bingo-blue underline">SAVE THE DATE</span>
-		FOR CHRIST OUR KING PRESCHOOL'S 3<sup>rd</sup> ANNUAL {@render bingo()} NIGHT! 🎉
+		FOR
+		<span class="inline-block"> CHRIST OUR KING PRESCHOOL'S</span>
+		<span class="inline-block"> 4<sup>th</sup> ANNUAL {@render bingo()} NIGHT! 🎉</span>
 	</h1>
 	<p>
-		Join us for the biggest fundraiser of the year on Friday, March 21st, 2025—an evening filled with fun, prizes, and community spirit! Food trucks will be ready to serve dinner starting at 5:00
+		Join us for the biggest fundraiser of the year on Friday, March 20th, 2026—an evening filled with fun, prizes, and community spirit! Food trucks will be ready to serve dinner starting at 5:00
 		p.m., so come early to enjoy delicious options before the {@render bingo()} action kicks off at 7:00 p.m.
 	</p>
 
@@ -32,7 +34,7 @@
 
 	<div class="m-auto w-full border p-5 sm:px-8 flex flex-col gap-2 bg-slate-100 text-lg justify-items-center">
 		<div class="m-auto">
-			<p>📅 Date: Friday, March 21st</p>
+			<p>📅 Date: Friday, March 20th</p>
 			<p>
 				📍 <a href="https://maps.app.goo.gl/6oiRYDuMY6NwXdXH8" class="underline text-bingo-blue" target="_blank" rel="noopener noreferrer"> Location: 10 Lexington Avenue, Bel Air </a>
 			</p>
@@ -45,7 +47,7 @@
 <div id="buy" class="section">
 	<h1>🎟️ BUY TICKETS</h1>
 	<p>
-		Join us for Christ Our King's Preschool 3rd Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are $25 each if purchased in advance, with multiple payment options available. You can
+		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are $25 each if purchased in advance, with multiple payment options available. You can
 			pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional $1.06 service fee per
 			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out, but
 			if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
@@ -61,7 +63,7 @@
 		{@render bingo()} and fun!
 	</p>
 
-	<p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>
+	<!-- <p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>
 	{#if enableTicketSales}
 		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
 	{:else}
@@ -69,7 +71,7 @@
 			<p class="font-bold text-xl">Online tickets are sold out!</p>
 			<p>Please send ticket requests to {contacts[0]?.email}</p>
 		</a>
-	{/if}
+	{/if} -->
 </div>
 
 <div id="food" class="section">
@@ -79,9 +81,9 @@
 		Preschool, as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the
 		playground. It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you there!
 	</p>
-	<p>Wondering what to eat? We've got you covered with these local food trucks:</p>
-	<SponsorList list={trucks} />
-	<p>Just want to give some money? Use the button below to donate directly.</p>
+	<!-- <p>Wondering what to eat? We've got you covered with these local food trucks:</p>
+	<SponsorList list={trucks} /> -->
+	<p>Want to help? A direct donation is greatly appreciated. Use the button below to support our cause!</p>
 	<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 </div>
 
@@ -100,7 +102,7 @@
 </div>
 
 <div class="section">
-	<h1>OUR SPONSORS</h1>
+	<h1>2025 SPONSORS</h1>
 	<p>
 		A heartfelt thank you to our sponsors for their generous support. Their contributions help Christ Our King Preschool provide memorable experiences, valuable resources, and enriching opportunities
 		for our students.

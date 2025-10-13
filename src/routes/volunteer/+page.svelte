@@ -4,7 +4,7 @@
 
 <div id="help" class="section h-full grow">
 	<h1>VOLUNTEER HELP WANTED!</h1>
-	<p>Need volunteer hours? Want to help out with setup, cleanup, or the Bingo event itself on March 21st? We are happy to accept any and all assistance!</p>
+	<p>Need volunteer hours? Want to help out with setup, cleanup, or the Bingo event itself on March 20th? We are happy to accept any and all assistance!</p>
 	<p>We will provide an official letter to volunteers as proof of hours spent helping with the event. In addition, pizza will also be provided! 🍕</p>
 	<p>Volunteers are asked to please complete the following form so event staff are able to properly account for the additional hands during the various stages of the event.</p>
 
