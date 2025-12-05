@@ -69,7 +69,7 @@
 
 	<!-- <p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>  -->
 	{#if enableTicketSales}
-		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
+		<a href="/purchase#buy" class="wideBtn">BUY TICKETS</a>
 	{:else}
 		<a href="#questions" class="wideBtn">
 			<p class="font-bold text-xl">Online tickets are sold out!</p>

@@ -5,7 +5,7 @@
 body,
 html {
 	font-family: Roboto, sans-serif;
-	scroll-behavior: smooth;	
+	scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +69,10 @@ h1 {
 }
 
 .wideBtn {
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	@apply w-full block bg-bingo-blue text-white text-center border border-bingo-green hover:bg-bingo-green transition-all px-6 py-3 text-lg cursor-pointer;
+}
+
+.wideBtn[disabled] {
+	@apply bg-gray-500 border-gray-600;
 }
