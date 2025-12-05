@@ -22,7 +22,8 @@
 			.filter((item) => item.count)
 		console.log(invoice)
 		let total = sum(invoice.map((item) => item.total))
-		invoice['Online Service Fee'] = Math.ceil((total * 0.029 + 0.3) * 100) / 100
+		let fee = Math.ceil((total * 0.029 + 0.3) * 100) / 100
+		invoice.push({ name: 'Online Service Fee', count: 1, price: fee, total: fee })
 		return invoice
 	}
 

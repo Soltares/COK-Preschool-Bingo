@@ -1,6 +1,7 @@
 <script lang="ts">
 	export let invoice: any
 
+	const sum = (numbers: number[]) => numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 	const formatCurrency = (amount) => {
 		return new Intl.NumberFormat('en-US', {
 			style: 'currency',
@@ -40,22 +41,14 @@
 	</table>
 </div>
 
-<!-- <div class="mt-6 flex justify-end">
+<div class="mt-6 flex justify-end">
 	<div class="w-full max-w-xs space-y-2">
-		<div class="flex justify-between border-t pt-2">
-			<span class="text-gray-700">Subtotal:</span>
-			<span class="font-medium text-gray-900">{formatCurrency(subtotal)}</span>
-		</div>
-		<div class="flex justify-between">
-			<span class="text-gray-700">Tax ({taxRate * 100}%):</span>
-			<span class="font-medium text-gray-900">{formatCurrency(taxAmount)}</span>
-		</div>
-		<div class="flex justify-between border-t-2 border-indigo-600 pt-3">
-			<span class="text-xl font-bold text-gray-900">Grand Total:</span>
-			<span class="text-xl font-bold text-indigo-600">{formatCurrency(grandTotal)}</span>
+		<div class="flex justify-between border-t-2 border-bingo-blue pt-3">
+			<span class="text-xl font-bold text-gray-900">Total:</span>
+			<span class="text-xl font-bold text-bingo-blue">{formatCurrency(sum(invoice.map((item) => item.total)))}</span>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <div class="mt-8">
 	<button class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Confirm Purchase</button>
