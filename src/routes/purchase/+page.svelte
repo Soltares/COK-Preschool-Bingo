@@ -27,6 +27,11 @@
 		return invoice
 	}
 
+	function onsubmit(e: SubmitEvent) {
+		e.preventDefault()
+		review = true
+	}
+
 	beforeNavigate((e) => {
 		if (review) {
 			if (e.type == 'popstate') {
@@ -49,7 +54,7 @@
 		<button onclick={() => (agreeAdults = true)} class="wideBtn">Agree and continue</button>
 	{:else if !review}
 		<!-- Product Catalog -->
-		<div class="space-y-6">
+		<form {onsubmit} class="space-y-6">
 			{#each Object.entries(items) as [name, item]}
 				<div class="flex items-center justify-between border-b pb-4 gap-4">
 					<div>
@@ -77,15 +82,11 @@
 			{/each}
 			<!-- Continue to Review -->
 			<div class="mt-8 pt-4">
-				<button
-					disabled={Object.values(cart).every((v) => v == 0)}
-					onclick={() => (review = true)}
-					class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-				>
+				<button type="submit" disabled={Object.values(cart).every((v) => v == 0)} class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
 					Continue</button
 				>
 			</div>
-		</div>
+		</form>
 	{:else}
 		<!-- Review Selected Items -->
 		<div class="flex flex-col gap-4">
