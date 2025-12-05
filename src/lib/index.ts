@@ -112,7 +112,8 @@ export let sponsors = [
 ]
 
 export let trucks = [
-	{ name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
+	// { name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
+	{ name: 'Vagabond Sandwich Co.', logoUrl: '/vagabond-logo.jpg', linkUrl: 'https://vagabondsandwichcompany.com/', class: '' },
 	{ name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' },
 ]
 

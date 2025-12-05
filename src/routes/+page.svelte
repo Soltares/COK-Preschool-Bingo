@@ -85,8 +85,8 @@
 		as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground.
 		It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you there!
 	</p>
-	<!-- <p>Wondering what to eat? We've got you covered with these local food trucks:</p>
-	<SponsorList list={trucks} /> -->
+	<p>Wondering what to eat? We've got you covered with these local food trucks! No ticket required!</p>
+	<SponsorList list={trucks} />
 	<p>Want to help? A direct donation is greatly appreciated. Use the button below to support our cause!</p>
 	<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 </div>
