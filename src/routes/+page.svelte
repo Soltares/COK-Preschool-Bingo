@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { contacts, sponsors, trucks, urlBuyTickets, urlDonate } from '$lib'
 	import Contact from '$lib/Contact.svelte'
+	import { prices } from '$lib/prices'
 	import SponsorList from '$lib/SponsorList.svelte'
+	import Timeline from '$lib/Timeline.svelte'
 
 	let enableTicketSales = import.meta.env.VITE_ENABLE_TICKET_SALES == 1
 </script>
@@ -19,13 +21,15 @@
 		<span class="inline-block"> 4<sup>th</sup> ANNUAL {@render bingo()} NIGHT! 🎉</span>
 	</h1>
 	<p>
-		Join us for the biggest fundraiser of the year on Friday, March 20th, 2026—an evening filled with fun, prizes, and community spirit! Food trucks will be ready to serve dinner starting at 5:00
-		p.m., so come early to enjoy delicious options before the {@render bingo()} action kicks off at 7:00 p.m.
+		Join us for the biggest fundraiser of the year on Friday, March 20th, 2026—an evening filled with fun, prizes, and community spirit! Food trucks will be ready to serve dinner starting at 5:00 pm,
+		so come early to enjoy delicious options before the {@render bingo()} action kicks off at 7:00 pm.
 	</p>
 
+	<Timeline />
+
 	<p>
-		Your ticket includes {@render bingo()} boards for all 20 games, each offering the chance to win fantastic basket prizes valued at over $100—some even higher! You can also try your luck with raffle
-		and 50/50 tickets available for purchase throughout the night, along with additional games to keep the excitement going.
+		Your ticket includes {@render bingo()} boards for all 20 games, each offering the chance to win fantastic basket prizes valued at over $100—some even higher! You can also try your luck with raffle and
+		50/50 tickets available for purchase throughout the night, along with additional games to keep the excitement going.
 	</p>
 
 	<p>
@@ -47,15 +51,15 @@
 <div id="buy" class="section">
 	<h1>🎟️ BUY TICKETS</h1>
 	<p>
-		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are $25 each if purchased in advance, with multiple payment options available. You can
-			pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional $1.06 service fee per
-			ticket.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out, but
-			if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
+		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are ${prices.onlineTicket} each if purchased in advance, with multiple payment options available.
+			You can pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional service fee per
+			transaction.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out,
+			but if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
 	</p>
-	<!-- <p>
-		Tickets on {@render bingo()} day will be available at the door for $30 until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate refunds and appreciate your
-		understanding.
-	</p> -->
+	<p>
+		Tickets on {@render bingo()} day will be available at the door for ${prices.doorTicket} until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate refunds
+		and appreciate your understanding.
+	</p>
 
 	<p>
 		Come prepared with cash for the event, as there will be plenty of extras for sale, including {@render bingo()}
@@ -63,7 +67,7 @@
 		{@render bingo()} and fun!
 	</p>
 
-	<!-- <p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>
+	<!-- <p class="font-bold">Due to unprecedented demand, we can no longer offer purchase of tickets at the door. Thank you for your understanding.</p>  -->
 	{#if enableTicketSales}
 		<a href={urlBuyTickets} class="wideBtn">BUY TICKETS</a>
 	{:else}
@@ -71,15 +75,15 @@
 			<p class="font-bold text-xl">Online tickets are sold out!</p>
 			<p>Please send ticket requests to {contacts[0]?.email}</p>
 		</a>
-	{/if} -->
+	{/if}
 </div>
 
 <div id="food" class="section">
 	<h1>COME HUNGRY, LEAVE HAPPY</h1>
 	<p>
-		Join us for a delicious start to {@render bingo()} Night with food trucks available from 5:00 p.m. onwards! Arrive early to explore a variety of tasty dinner options while supporting Christ Our King
-		Preschool, as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the
-		playground. It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you there!
+		Join us for a delicious start to {@render bingo()} Night with food trucks available from 5:00 pm onwards! Arrive early to explore a variety of tasty dinner options while supporting Christ Our King Preschool,
+		as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground.
+		It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you there!
 	</p>
 	<!-- <p>Wondering what to eat? We've got you covered with these local food trucks:</p>
 	<SponsorList list={trucks} /> -->
