@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as stripe from './stripe'
 	export let invoice: any
 
 	const sum = (numbers: number[]) => numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
@@ -7,6 +8,20 @@
 			style: 'currency',
 			currency: 'USD',
 		}).format(amount)
+	}
+
+	async function beginCheckout() {
+		const response = await fetch('/api/create_checkout_session', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(invoice),
+		})
+
+		const { url } = await response.json()
+		if (url) {
+			// Redirect the user to Stripe
+			window.location.href = url
+		}
 	}
 </script>
 
@@ -51,5 +66,5 @@
 </div>
 
 <div class="mt-8">
-	<button class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Confirm Purchase</button>
+	<button onclick={() => beginCheckout()} class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Confirm Purchase</button>
 </div>

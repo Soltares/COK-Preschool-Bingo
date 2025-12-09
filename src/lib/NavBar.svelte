@@ -2,7 +2,7 @@
 	let navLinks = [
 		// { href: '/#', label: 'HOME', className: 'hidden sm:block' },
 		{ href: '/#about', label: 'ABOUT' },
-		{ href: '/#buy', label: 'TICKETS' },
+		{ href: '/#tickets', label: 'TICKETS' },
 		{ href: '/#food', label: 'FOOD' },
 		{ href: '/#where', label: 'WHERE' },
 		{ href: '/volunteer#help', label: 'VOLUNTEER' },

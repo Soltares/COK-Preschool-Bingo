@@ -3,7 +3,7 @@
 	import Checkout from '$lib/Checkout.svelte'
 	import { onMount } from 'svelte'
 
-	let agreeAdults = $state(false)
+	let agreeAdults = $state(true)
 	let review = $state(false)
 
 	const items = {
@@ -20,7 +20,7 @@
 		let invoice = Object.entries(cart)
 			.map(([name, count]) => ({ name, count, price: items[name].price, total: items[name].price * count }))
 			.filter((item) => item.count)
-		console.log(invoice)
+		// console.log(invoice)
 		let total = sum(invoice.map((item) => item.total))
 		let fee = Math.ceil((total * 0.029 + 0.3) * 100) / 100
 		invoice.push({ name: 'Online Service Fee', count: 1, price: fee, total: fee })
@@ -33,13 +33,10 @@
 	}
 
 	beforeNavigate((e) => {
-		if (review) {
-			if (e.type == 'popstate') {
-				review = false
-				e.cancel() // Back button return to products
-			} else if (e.type == 'leave') {
-				e.cancel() // Tab Close..  Are you sure?
-			}
+		console.log(e)
+		if (review && e.type == 'popstate') {
+			review = false
+			e.cancel() // Back button return to products
 		}
 	})
 </script>

@@ -48,7 +48,7 @@
 </div>
 
 <!-- Buy Tickets -->
-<div id="buy" class="section">
+<div id="tickets" class="section">
 	<h1>🎟️ BUY TICKETS</h1>
 	<p>
 		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are ${prices.onlineTicket} each if purchased in advance, with multiple payment options available.
