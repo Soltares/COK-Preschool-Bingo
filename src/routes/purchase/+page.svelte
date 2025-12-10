@@ -4,7 +4,7 @@
 	import Checkout from '$lib/Checkout.svelte'
 	import { onMount } from 'svelte'
 
-	let agreeAdults = $state(true)
+	let agreeAdults = $state(false)
 	let review = $state(false)
 	const cart: Record<string, number> = $state({})
 	onMount(() => items.forEach((item) => (cart[item.name] = 0)))
