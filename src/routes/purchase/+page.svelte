@@ -1,31 +1,13 @@
 <script lang="ts">
 	import { beforeNavigate } from '$app/navigation'
+	import { formatCents, itemIndex, items } from '$lib'
 	import Checkout from '$lib/Checkout.svelte'
 	import { onMount } from 'svelte'
 
 	let agreeAdults = $state(true)
 	let review = $state(false)
-
-	const items = {
-		'Bingo Entry Ticket': { price: 30, description: 'Entry ticket for 1 adult (18+) to the COK Bingo event! Includes 20 games, 3 bingo squares per game.' },
-		'Extra Bingo Games': { price: 10, description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.' },
-		'Special Bingo Games': { price: 5, description: 'A special rules bingo games. The prizes are bigger and better! Includes 5 games, 1 square per game.' },
-	}
 	const cart: Record<string, number> = $state({})
-	onMount(() => Object.keys(items).forEach((name) => (cart[name] = 0)))
-
-	const sum = (numbers: number[]) => numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
-
-	function getInvoice() {
-		let invoice = Object.entries(cart)
-			.map(([name, count]) => ({ name, count, price: items[name].price, total: items[name].price * count }))
-			.filter((item) => item.count)
-		// console.log(invoice)
-		let total = sum(invoice.map((item) => item.total))
-		let fee = Math.ceil((total * 0.029 + 0.3) * 100) / 100
-		invoice.push({ name: 'Online Service Fee', count: 1, price: fee, total: fee })
-		return invoice
-	}
+	onMount(() => items.forEach((item) => (cart[item.name] = 0)))
 
 	function onsubmit(e: SubmitEvent) {
 		e.preventDefault()
@@ -33,7 +15,6 @@
 	}
 
 	beforeNavigate((e) => {
-		console.log(e)
 		if (review && e.type == 'popstate') {
 			review = false
 			e.cancel() // Back button return to products
@@ -52,24 +33,24 @@
 	{:else if !review}
 		<!-- Product Catalog -->
 		<form {onsubmit} class="space-y-6">
-			{#each Object.entries(items) as [name, item]}
+			{#each items as item}
 				<div class="flex items-center justify-between border-b pb-4 gap-4">
 					<div>
-						<label for="bingo-ticket-qty" class="text-xl font-semibold text-gray-900 block">{name} - ${item.price}</label>
+						<label for="bingo-ticket-qty" class="text-xl font-semibold text-gray-900 block">{item.name} - {formatCents(item.priceCents)}</label>
 						<p class="text-sm text-gray-500 mt-1">{item.description}</p>
 					</div>
 					<div class="flex items-center space-x-2">
 						<button
 							type="button"
-							onclick={() => (cart[name] = Math.max(cart[name] - 1, 0))}
+							onclick={() => (cart[item.name] = Math.max(cart[item.name] - 1, 0))}
 							class="w-8 h-8 flex items-center justify-center text-xl border border-gray-300 text-gray-700 hover:bg-gray-100 rounded-full transition duration-150"
 						>
 							-
 						</button>
-						<input type="number" pattern="[0-9]*" min="0" bind:value={cart[name]} class="w-12 text-center text-lg font-medium border-0 focus:ring-0 p-0" />
+						<input type="number" pattern="[0-9]*" min="0" bind:value={cart[item.name]} class="w-12 text-center text-lg font-medium border-0 focus:ring-0 p-0" />
 						<button
 							type="button"
-							onclick={() => (cart[name] += 1)}
+							onclick={() => (cart[item.name] += 1)}
 							class="w-8 h-8 flex items-center justify-center text-xl border border-gray-300 text-gray-700 hover:bg-gray-100 rounded-full transition duration-150"
 						>
 							+
@@ -96,7 +77,7 @@
 				<button class="wideBtn !w-32 !text-sm !p-2 !px-4" onclick={() => history.back()}>Adjust Items</button>
 			</div>
 			<div>
-				<Checkout invoice={getInvoice()} />
+				<Checkout {cart} />
 			</div>
 		</div>
 	{/if}

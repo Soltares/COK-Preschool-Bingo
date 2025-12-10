@@ -2,6 +2,14 @@
 export let urlBuyTickets = import.meta.env.VITE_URL_TICKETS
 export let urlDonate = import.meta.env.VITE_URL_DONATE
 
+export function formatCents(cents: number) {
+	const dollars = cents / 100
+	return new Intl.NumberFormat('en-US', {
+		style: 'currency',
+		currency: 'USD',
+	}).format(dollars)
+}
+
 export let sponsors = [
 	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/' },
 	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
@@ -121,3 +129,12 @@ export let contacts = [
 	{ name: 'Rebecca Wood - Bingo Chair', email: 'bingo@christourking.net', phone: '609-213-2310' },
 	{ name: 'Colleen Gambril', email: 'colleen@christourking.net', phone: '410-836-0141' },
 ]
+
+export const items = [
+	{ name: 'Bingo Entry Ticket', priceCents: 3000, description: 'Entry ticket for 1 adult (18+) to the COK Bingo event! Includes 20 games, 3 bingo squares per game.' },
+	{ name: 'Extra Bingo Games', priceCents: 1000, description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.' },
+	{ name: 'Special Bingo Games', priceCents: 500, description: 'A special rules bingo games. The prizes are bigger and better! Includes 5 games, 1 square per game.' },
+]
+export type Item = (typeof items)[number]
+export const itemIndex = Object.fromEntries(items.map((item) => [item.name, item]))
+export type InvoiceItem = { name: string; count: number; priceCents: number; description?: string }

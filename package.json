@@ -28,6 +28,8 @@
 		"vite": "^5.0.3"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-node": "^5.4.0",
+		"stripe": "^20.0.0",
 		"svelte-vertical-timeline": "^2.0.0"
 	}
 }
