@@ -1,8 +1,8 @@
-import { STRIPE_SECRET_KEY, DISCORD_WEBHOOK, BASE_URL } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 import { formatCents, type InvoiceItem } from '$lib'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(STRIPE_SECRET_KEY)
+const stripe = new Stripe(env.STRIPE_SECRET_KEY)
 
 export async function beginCheckout(cart: InvoiceItem[]) {
 	const line_items = cart.map((item) => {
@@ -11,7 +11,7 @@ export async function beginCheckout(cart: InvoiceItem[]) {
 				currency: 'usd',
 				product_data: {
 					name: item.name,
-					images: [`${BASE_URL}/logo.png`],
+					images: [`${env.BASE_URL}/logo.png`],
 					description: item.description,
 				},
 				unit_amount: item.priceCents,
@@ -27,16 +27,17 @@ export async function beginCheckout(cart: InvoiceItem[]) {
 		line_items,
 		invoice_creation: { enabled: true, invoice_data: { description } },
 		mode: 'payment', // "payment" for one-time, "subscription" for recurring
-		success_url: `${BASE_URL}/thankyou`, // Where to go after payment
-		cancel_url: `${BASE_URL}/purchase`, // Where to go if they click back
+		success_url: `${env.BASE_URL}/thankyou`, // Where to go after payment
+		cancel_url: `${env.BASE_URL}/purchase`, // Where to go if they click back
+		payment_intent_data: { description },
 	})
 
 	return { url: session.url }
 }
 
 export function discordSend(content: string) {
-	if (!DISCORD_WEBHOOK) return
-	return fetch(DISCORD_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content }) })
+	if (!env.DISCORD_WEBHOOK) return
+	return fetch(env.DISCORD_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content }) })
 }
 
 export function checkoutCompleted(payload: any) {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { contacts, sponsors, trucks, urlBuyTickets, urlDonate } from '$lib'
+	import { contacts, sponsors, trucks, urlDonate } from '$lib'
 	import Contact from '$lib/Contact.svelte'
 	import { prices } from '$lib/prices'
 	import SponsorList from '$lib/SponsorList.svelte'

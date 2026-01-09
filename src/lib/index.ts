@@ -1,6 +1,6 @@
-// place files you want to import through the `$lib` alias in this folder.
-export let urlBuyTickets = import.meta.env.VITE_URL_TICKETS
-export let urlDonate = import.meta.env.VITE_URL_DONATE
+import { env } from '$env/dynamic/public'
+
+export let urlDonate = env.PUBLIC_URL_DONATE
 
 export function formatCents(cents: number) {
 	const dollars = cents / 100
