@@ -3,9 +3,9 @@
 </script>
 
 <!-- Header with image -->
-<header class="banner grid grid-rows-[auto_1fr_auto] text-center relative items-center" id="home">
-	<img class="m-auto z-10 h-[100px] sm:[h-100px] md:h-[125px] bg-white rounded-full mt-5 pointer-events-none" src="logo.png" alt="Logo" />
-	<div class="banner-text text-[70px] md:text-[90px] text-white z-10 mx-16 select-none -mb-6 md:mb-6">BINGO NIGHT!</div>
+<header class="banner flex flex-col items-center text-center relative" id="home">
+	<img class="z-10 h-[100px] sm:[h-100px] md:h-[125px] bg-white rounded-full mt-5 pointer-events-none" src="logo.png" alt="Logo" />
+	<div class="m-auto pb-28 banner-text text-[70px] md:text-[90px] text-white z-10 mx-16 select-none">BINGO NIGHT!</div>
 	<!-- <div class:visible={enableTicketSales} class="min-h-40 md:min-h-32 z-10 invisible">
 		<a href={urlBuyTickets} class="block w-40 font-semibold m-auto hover:black z-10 border bg-bingo-blue text-white px-6 py-3 hover:bg-bingo-green transition-all hover:scale-110 cursor-pointer">
 			BUY TICKETS
