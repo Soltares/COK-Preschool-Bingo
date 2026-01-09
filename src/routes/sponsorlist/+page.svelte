@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { sponsors } from '$lib'
+	import { currentSponsors } from '$lib'
 	let enableLinks = $state(false)
 	let showURL = $state(false)
 	let tableElement: HTMLTableElement
@@ -35,7 +35,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each [...sponsors].sort((a, b) => a.name.localeCompare(b.name)) as sponsor}
+			{#each [...currentSponsors].sort((a, b) => a.name.localeCompare(b.name)) as sponsor}
 				<tr class="border-b">
 					<td class="whitespace-nowrap">
 						{#if enableLinks && sponsor.linkUrl}

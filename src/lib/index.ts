@@ -10,7 +10,15 @@ export function formatCents(cents: number) {
 	}).format(dollars)
 }
 
-export let sponsors = [
+export let currentSponsors = [
+	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/' },
+	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
+	{ name: 'Affirmatech Inc', logoUrl: '/affirmatech-logo.jpg', linkUrl: 'https://affirmatech.com' },
+	{ name: 'The Playroom', logoUrl: '/The-Playroom-Logo.svg', linkUrl: 'https://playroomharford.com/', class: '!rounded-none' },
+	{ name: "We Rock The Spectrum Kid's Gym", logoUrl: '/we-rock-the-spectrum-logo.png', linkUrl: 'https://werockthespectrumforesthill.com/', class: 'scale-110' },
+]
+
+export let pastSponsors = [
 	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/' },
 	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
 	{ name: 'Affirmatech Inc', logoUrl: '/affirmatech-logo.jpg', linkUrl: 'https://affirmatech.com' },
@@ -133,7 +141,8 @@ export let contacts = [
 export const items = [
 	{ name: 'Bingo Entry Ticket', priceCents: 3000, description: 'Entry ticket for 1 adult (18+) to the COK Bingo event! Includes 20 games, 3 bingo squares per game.' },
 	{ name: 'Extra Bingo Games', priceCents: 1000, description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.' },
-	{ name: 'Special Bingo Games', priceCents: 500, description: 'A special rules bingo games. The prizes are bigger and better! Includes 5 games, 1 square per game.' },
+	{ name: 'Special Game', priceCents: 500, description: 'A special rules bingo game. The prizes are bigger and better! Includes 1 game, 1 square.' },
+	{ name: 'Special Games (5-Pack)', priceCents: 2000, description: 'Pack of 5 special rules bingo games. The prizes are bigger and better! Includes all 5 special games, 1 square per game.' },
 ]
 export type Item = (typeof items)[number]
 export const itemIndex = Object.fromEntries(items.map((item) => [item.name, item]))

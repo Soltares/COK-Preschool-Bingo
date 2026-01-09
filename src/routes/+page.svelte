@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { contacts, sponsors, trucks, urlDonate } from '$lib'
+	import { contacts, currentSponsors, pastSponsors, trucks, urlDonate } from '$lib'
 	import Contact from '$lib/Contact.svelte'
-	import { prices } from '$lib/prices'
 	import SponsorList from '$lib/SponsorList.svelte'
+	import SponsorMarquee from '$lib/SponsorMarquee.svelte'
 	import Timeline from '$lib/Timeline.svelte'
 
 	let enableTicketSales = import.meta.env.VITE_ENABLE_TICKET_SALES == 1
@@ -51,14 +51,14 @@
 <div id="tickets" class="section">
 	<h1>🎟️ BUY TICKETS</h1>
 	<p>
-		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are ${prices.onlineTicket} each if purchased in advance, with multiple payment options available.
-			You can pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional service fee per
-			transaction.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are currently sold out,
-			but if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
+		Join us for Christ Our King's Preschool 4th Annual {@render bingo()} Night! {#if enableTicketSales}Tickets are <span class="font-bold">$30</span> each if purchased in advance, with multiple payment
+			options available. You can pay by cash (drop off to Colleen Gambril or the church office), by check (made payable to Christ Our King Preschool), or conveniently through our website for an additional
+			service fee per transaction.{/if} Tickets bought online will still be eligible for raffle prizes as you can claim your physical ticket at the door. {#if !enableTicketSales}Online tickets are
+			currently sold out, but if you are interested in purchasing tickets before the event, please contact <a class="text-bingo-blue" href="mailto:{contacts[0].email}">{contacts[0].name}.</a>{/if}
 	</p>
 	<p>
-		Tickets on {@render bingo()} day will be available at the door for ${prices.doorTicket} until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate refunds
-		and appreciate your understanding.
+		Tickets on {@render bingo()} day will be available at the door for <span class="font-bold">$35</span> until all seats are filled. Tickets will go fast and all sales are final! We are unable to accomodate
+		refunds and appreciate your understanding.
 	</p>
 
 	<p>
@@ -81,14 +81,17 @@
 <div id="food" class="section">
 	<h1>COME HUNGRY, LEAVE HAPPY</h1>
 	<p>
+		<span class="font-bold">Food Trucks:</span>
 		Join us for a delicious start to {@render bingo()} Night with food trucks available from 5:00 pm onwards! Arrive early to explore a variety of tasty dinner options while supporting Christ Our King Preschool,
-		as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground.
-		It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you there!
+		as a portion of each purchase goes directly to benefit our school. Even if you can't stay for {@render bingo()}, bring the whole family to enjoy a meal and let the kids play on the playground --
+		no ticket required! It's a wonderful chance to connect with our preschool, church, and neighborhood families over a delicious meal. Don't miss this community gathering for a great cause—see you
+		there!
 	</p>
-	<p>Wondering what to eat? We've got you covered with these local food trucks! No ticket required!</p>
 	<SponsorList list={trucks} />
-	<p>Want to help? A direct donation is greatly appreciated. Use the button below to support our cause!</p>
-	<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
+	<p>
+		<span class="font-bold">Bake Sale:</span>
+		For those on the {@render bingo()} floor, delectable baked goods will be available for purchase to satisfy your sweet tooth!
+	</p>
 </div>
 
 <!-- Contact/Area Container -->
@@ -106,17 +109,22 @@
 </div>
 
 <div class="section">
-	<h1>2025 SPONSORS</h1>
+	<h1>SPONSORS</h1>
 	<p>
 		A heartfelt thank you to our sponsors for their generous support. Their contributions help Christ Our King Preschool provide memorable experiences, valuable resources, and enriching opportunities
 		for our students.
 	</p>
-	<SponsorList list={sponsors} maxColumns={3} />
+	<SponsorList list={currentSponsors} maxColumns={3} />
+
+	<h1>PAST SPONSORS</h1>
+	<SponsorMarquee list={pastSponsors} />
 </div>
 
 <div class="section">
 	<h1>VOLUNTEERS</h1>
 	<p>Interested in volunteering? <a class="text-bingo-blue underline" href="/volunteer#help">Click here</a> for more information!</p>
+	<p>Want to help sponsor? A direct donation is greatly appreciated. Use the button below to support our cause!</p>
+	<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 </div>
 
 <Contact />

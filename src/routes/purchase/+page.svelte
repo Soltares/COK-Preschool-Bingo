@@ -23,7 +23,7 @@
 </script>
 
 <div id="buy" class="section h-full grow">
-	<h1>PURCHASE TICKETS AND GOODIES</h1>
+	<h1>PURCHASE TICKETS AND EXTRAS</h1>
 
 	{#if !agreeAdults}
 		<!-- Accept 18+ ? -->
