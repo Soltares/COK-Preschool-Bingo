@@ -128,9 +128,10 @@ export let pastSponsors = [
 ]
 
 export let trucks = [
-	// { name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
 	{ name: 'Vagabond Sandwich Co.', logoUrl: '/vagabond-logo.jpg', linkUrl: 'https://vagabondsandwichcompany.com/', class: '' },
-	{ name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' },
+	{ name: 'Box Hill Pizzeria & Crabcakes', logoUrl: '/box-hill-logo.png', linkUrl: 'https://www.boxhillpizzarestaurant.com/food-truck-menu/', class: '' },
+	// { name: 'Man I Love Food', logoUrl: '/milfs.jpg', linkUrl: 'https://milfs-hot-spot.square.site' },
+	// { name: 'Dough Slingers', logoUrl: '/dough-slingers-logo.png', linkUrl: 'https://doughslingersfunnelcakes.com', class: 'scale-110' },
 ]
 
 export let contacts = [

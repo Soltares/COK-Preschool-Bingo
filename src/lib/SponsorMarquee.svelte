@@ -7,15 +7,13 @@
 
 	const startAutoScroll = () => {
 		scrollInterval = setInterval(() => {
-			if (!container) return
-
-			const cardWidth = container.firstChild.offsetWidth // Width + gap
+			// const cardWidth = container.firstChild.offsetWidth // Width + gap
 			const isAtEnd = container.scrollLeft >= container.scrollWidth - container.clientWidth - 10
 
 			if (isAtEnd) {
 				container.scrollTo({ left: 0, behavior: 'smooth' })
 			} else {
-				container.scrollBy({ left: cardWidth, behavior: 'smooth' })
+				container.scrollBy({ left: 200, behavior: 'smooth' })
 			}
 		}, 2000)
 	}
@@ -30,13 +28,7 @@
 </script>
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
-<div
-	bind:this={container}
-	on:mouseenter={stopScroll}
-	on:mouseleave={resumeScroll}
-	class="flex overflow-x-auto snap-x snap-mandatory gap-6 py-6 no-scrollbar"
-	style="scrollbar-width: none; -ms-overflow-style: none;"
->
+<div bind:this={container} class="flex overflow-x-auto snap-x snap-mandatory gap-6 py-6 no-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
 	{#each list as sponsor}
 		<div class="snap-center shrink-0">
 			<svelte:element
