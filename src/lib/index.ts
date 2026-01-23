@@ -16,6 +16,12 @@ export let currentSponsors = [
 	{ name: 'Affirmatech Inc', logoUrl: '/affirmatech-logo.jpg', linkUrl: 'https://affirmatech.com' },
 	{ name: 'The Playroom', logoUrl: '/The-Playroom-Logo.svg', linkUrl: 'https://playroomharford.com/', class: '!rounded-none' },
 	{ name: "We Rock The Spectrum Kid's Gym", logoUrl: '/we-rock-the-spectrum-logo.png', linkUrl: 'https://werockthespectrumforesthill.com/', class: 'scale-110' },
+	{ name: 'Kinetic Ninja Warrior', logoUrl: '/kinetic-ninja-warrior-logo.png', linkUrl: 'https://kineticninjawarrior.com/', class: '!rounded-none' },
+	{ name: 'Coca-Cola', logoUrl: '/coca-cola-logo.webp', linkUrl: 'https://www.coca-cola.com/us/en', class: '!rounded-none' },
+	{ name: 'Oriental Trading', logoUrl: '/oriental-trading-logo.svg', linkUrl: 'https://www.orientaltrading.com/', class: 'bg-[#1490c0] px-2' },
+	{ name: 'Herrs', logoUrl: '/herrs-logo.png', linkUrl: 'https://www.herrs.com/', class: '!rounded-none' },
+	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
+	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo.png', linkUrl: 'https://www.ssorchestra.org/', class: 'scale-150 !rounded-none' },
 ]
 
 export let pastSponsors = [
