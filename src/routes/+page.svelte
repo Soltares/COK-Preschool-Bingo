@@ -45,6 +45,8 @@
 			<p>🎟️ Prizes, raffles, food trucks, and so much more!</p>
 		</div>
 	</div>
+
+	<a href="/faq#faq" class="wideBtn">FREQUENTLY ASKED QUESTIONS</a>
 </div>
 
 <!-- Buy Tickets -->
