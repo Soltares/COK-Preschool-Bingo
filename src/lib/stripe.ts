@@ -48,7 +48,6 @@ export function checkoutCompleted(payload: any) {
 		description: payload?.data?.object?.invoice_creation?.invoice_data?.description,
 	}
 
-	console.log(JSON.stringify(payload.data))
 	console.log(JSON.stringify({ type: 'checkout', ...detail }))
 	discordSend(`${formatCents(detail.amountCents)} :dollar: ${detail.name} ${detail.email} - ${detail.description}`)
 }
