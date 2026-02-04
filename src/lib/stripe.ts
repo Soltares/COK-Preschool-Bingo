@@ -25,7 +25,7 @@ export async function beginCheckout(cart: InvoiceItem[]) {
 		// payment_method_types: ["card"],
 		submit_type: 'pay',
 		line_items,
-		invoice_creation: { enabled: true, invoice_data: { description } },
+		// invoice_creation: { enabled: true, invoice_data: { description } },
 		mode: 'payment', // "payment" for one-time, "subscription" for recurring
 		success_url: `${env.BASE_URL}/thankyou`, // Where to go after payment
 		cancel_url: `${env.BASE_URL}/purchase`, // Where to go if they click back

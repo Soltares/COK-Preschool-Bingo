@@ -22,6 +22,9 @@ export let currentSponsors = [
 	{ name: 'Herrs', logoUrl: '/herrs-logo.png', linkUrl: 'https://www.herrs.com/', class: '!rounded-none' },
 	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
 	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo.png', linkUrl: 'https://www.ssorchestra.org/', class: 'scale-150 !rounded-none' },
+	{ name: 'STAR Centre', logoUrl: '/star-centre-logo.png', linkUrl: 'https://starcentremd.com/', class: '!rounded-lg bg-[rgb(33,64,154)] p-2 scale-110' },
+	{ name: 'Utz', logoUrl: '/utz-logo.svg', linkUrl: 'https://www.utzsnacks.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Ladew Topiary Gardens', logoUrl: '/ladew-gardens-logo.png', linkUrl: 'https://ladewgardens.com/', class: '!rounded-lg bg-[rgb(98,_136,_63)] px-2' },
 ]
 
 export let pastSponsors = [
