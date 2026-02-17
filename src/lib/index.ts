@@ -11,7 +11,7 @@ export function formatCents(cents: number) {
 }
 
 export let currentSponsors = [
-	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/' },
+	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/', class: '!rounded-lg bg-white border scale-110' },
 	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
 	{ name: 'Affirmatech Inc', logoUrl: '/affirmatech-logo.jpg', linkUrl: 'https://affirmatech.com' },
 	{ name: 'The Playroom', logoUrl: '/The-Playroom-Logo.svg', linkUrl: 'https://playroomharford.com/', class: '!rounded-none' },
@@ -23,7 +23,7 @@ export let currentSponsors = [
 	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
 	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo.png', linkUrl: 'https://www.ssorchestra.org/', class: 'scale-150 !rounded-none' },
 	{ name: 'STAR Centre', logoUrl: '/star-centre-logo.png', linkUrl: 'https://starcentremd.com/', class: '!rounded-lg bg-[rgb(33,64,154)] p-2 scale-110' },
-	{ name: 'Utz', logoUrl: '/utz-logo.svg', linkUrl: 'https://www.utzsnacks.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Utz', logoUrl: '/utz-logo.svg', linkUrl: 'https://www.utzsnacks.com/', class: '!rounded-lg scale-110 border' },
 	{ name: 'Ladew Topiary Gardens', logoUrl: '/ladew-gardens-logo.png', linkUrl: 'https://ladewgardens.com/', class: '!rounded-lg bg-[rgb(98,_136,_63)] px-2' },
 	{ name: 'Wegmans', logoUrl: '/wegmans-logo.min.svg', linkUrl: 'https://www.wegmans.com/stores/bel-air-md/', clfss: '!rounded-none' },
 	{ name: 'The Tile Shop', logoUrl: '/the-tile-shop-logo.svg', linkUrl: 'https://www.tileshop.com/store-locator/bel-air', class: '!rounded-lg scale-125' },
@@ -31,7 +31,7 @@ export let currentSponsors = [
 	{ name: 'Horizon Cinemas', logoUrl: '/horizon-cinemas-logo.png', linkUrl: 'https://horizoncinemas.com/home', class: 'bg-black px-2 !rounded' },
 	{ name: 'Z Vault', logoUrl: '/z-vault-logo.png', linkUrl: 'https://www.zvaultbar.com/', class: 'bg-black p-1 !rounded-lg' },
 	{ name: 'Imagine Nail Salon', logoUrl: '/imagine-nail-salon-logo.png', linkUrl: 'https://www.imaginenail.com/', class: '' },
-	{ name: 'Bagel Works', logoUrl: '/bagel-works-logo.jpg', linkUrl: 'https://www.facebook.com/15dbiel/', class: '!rounded-lg' },
+	{ name: 'Bagel Works', logoUrl: '/bagel-works-logo.jpg', linkUrl: 'https://www.facebook.com/15dbiel/', class: '!rounded-lg border pb-1 scale-110' },
 	{ name: 'Vagabond Sandwich Company', logoUrl: '/vagabond-sandwich-logo.png', linkUrl: 'https://vagabondsandwichcompany.com/', class: '!rounded-none' },
 	{ name: "Chung's Martial Arts", logoUrl: '/chungs-logodark.png', linkUrl: 'https://chungsmartialarts.net/', class: '!rounded-none' },
 	{ name: 'Plumpton Park Zoo', logoUrl: '/Plumpton-Park-Zoo-Logo.png', linkUrl: 'https://plumptonparkzoo.org/', class: '!rounded-none' },
@@ -42,8 +42,8 @@ export let currentSponsors = [
 		class: '!rounded-none',
 	},
 	{ name: "Bruster's Ice Cream", logoUrl: '/BrustersLogo.svg', linkUrl: 'https://brusters.com/', class: '!rounded-none' },
-	{ name: 'Law Offices of Brian K. Young', logoUrl: '/brian-young-logo.jpg', linkUrl: 'https://harfordlaw.com/', class: '!rounded-lg p-2 bg-white' },
-	{ name: 'Top Dog Golf Center', logoUrl: '/top-dog-golf-logo.webp', linkUrl: 'https://topdoggolfcenter.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Law Offices of Brian K. Young', logoUrl: '/brian-young-logo.jpg', linkUrl: 'https://harfordlaw.com/', class: '!rounded-lg p-2 bg-white border' },
+	{ name: 'Top Dog Golf Center', logoUrl: '/top-dog-golf-logo.webp', linkUrl: 'https://topdoggolfcenter.com/', class: '!rounded-lg scale-110 border p-1 bg-white' },
 	{ name: "Miller's Ale House", logoUrl: '/millers-ale-house-logo.svg', linkUrl: 'https://millersalehouse.com/locations/bel-air/', class: '!rounded-lg scale-110 bg-[rgb(58,45,35)] px-3' },
 	{ name: 'Divine Sweets and Gifts', logoUrl: '/Divine-Sweets-Logo.png', linkUrl: 'https://divinesweetsandgifts.com/', class: '' },
 	{ name: 'Famous Nails and Spa', logoUrl: '/famous-nails-logo.jpg', linkUrl: 'https://www.facebook.com/p/Famous-Nails-and-Spa-100075982695659/', class: '!rounded-lg' },
