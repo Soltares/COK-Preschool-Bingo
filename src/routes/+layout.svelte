@@ -7,7 +7,9 @@
 	let { children } = $props()
 </script>
 
-<NavBar />
+{#if !$page.url.pathname.startsWith('/terminal')}
+	<NavBar />
+{/if}
 <div class="h-full flex flex-col">
 	{#if $page.url.pathname == '/'}
 		<Hero />
@@ -15,5 +17,7 @@
 	<div class="container m-auto px-5 xl:px-44 lg:px-20 grow pb-16 flex flex-col">
 		{@render children()}
 	</div>
-	<Footer />
+	{#if !$page.url.pathname.startsWith('/terminal')}
+		<Footer />
+	{/if}
 </div>
