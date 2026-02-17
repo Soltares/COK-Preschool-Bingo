@@ -116,7 +116,7 @@
 		A heartfelt thank you to our sponsors for their generous support. Their contributions help Christ Our King Preschool provide memorable experiences, valuable resources, and enriching opportunities
 		for our students.
 	</p>
-	<SponsorList list={currentSponsors} maxColumns={3} />
+	<SponsorList list={currentSponsors} maxColumns={4} />
 
 	<h1>PAST SPONSORS</h1>
 	<SponsorMarquee list={pastSponsors} />

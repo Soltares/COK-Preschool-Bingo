@@ -8,7 +8,7 @@
 	}
 
 	let { list, maxColumns = 3 }: Props = $props()
-	let gridCols = ['sm:grid-cols-1 md:grid-cols-1', 'sm:grid-cols-2 md:grid-cols-2', 'sm:grid-cols-2 lg:grid-cols-3']
+	let gridCols = ['sm:grid-cols-1 md:grid-cols-1', 'sm:grid-cols-2 md:grid-cols-2', 'sm:grid-cols-2 xl:grid-cols-3', 'sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4']
 </script>
 
 <div class="grid grid-cols-1 {gridCols[Math.min(list.length, maxColumns) - 1]} w-full text-lg gap-6 py-3">
