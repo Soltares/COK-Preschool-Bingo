@@ -14,8 +14,6 @@ export const actions: Actions = {
 		const user = data.get('user')
 		const password = data.get('password')
 
-		console.log(user, password)
-
 		if (user === TERMINAL_USER && password === TERMINAL_PASSWORD) {
 			const one_week = 60 * 60 * 24 * 7
 			cookies.set('authenticated', crypto.randomUUID(), {

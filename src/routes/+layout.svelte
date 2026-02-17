@@ -10,11 +10,11 @@
 {#if !$page.url.pathname.startsWith('/terminal')}
 	<NavBar />
 {/if}
-<div class="h-full flex flex-col">
+<div id="layoutMain" class="h-full flex flex-col">
 	{#if $page.url.pathname == '/'}
 		<Hero />
 	{/if}
-	<div class="container m-auto px-5 xl:px-44 lg:px-20 grow pb-16 flex flex-col">
+	<div id="layoutBody" class="container m-auto px-5 xl:px-44 lg:px-20 grow pb-16 flex flex-col">
 		{@render children()}
 	</div>
 	{#if !$page.url.pathname.startsWith('/terminal')}

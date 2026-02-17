@@ -51,3 +51,40 @@ export function checkoutCompleted(payload: any) {
 	console.log(JSON.stringify({ type: 'checkout', ...detail }))
 	discordSend(`${formatCents(detail.amountCents)} :dollar: ${detail.name} ${detail.email} - ${detail.description}`)
 }
+
+// app.post('/connection_token', async (req, res) => {
+export async function createTerminalConnection() {
+	let connectionToken = await stripe.terminal.connectionTokens.create()
+	return { secret: connectionToken.secret }
+}
+
+// app.post('/create_payment_intent', async (req, res) => {
+export async function createTerminalPaymentIntent(amount: number, email: string, description: string) {
+	// For Terminal payments, the 'payment_method_types' parameter must include 'card_present'.
+	// To automatically capture funds when a charge is authorized, set `capture_method` to `automatic`.
+	console.log('/create_payment_intent', amount, email, description)
+	try {
+		const intent = await stripe.paymentIntents.create({
+			amount: Math.ceil(amount * 100), // Convert to cents
+			currency: 'usd',
+			payment_method_types: ['card_present'],
+			capture_method: 'manual',
+			receipt_email: email?.length ? email : undefined,
+			description: description?.length ? description : undefined,
+		})
+		return intent
+	} catch (e) {
+		console.error(e)
+	}
+}
+
+// app.post('/cancel_payment_intent', async (req, res) => {
+export async function cancelPaymentIntent(id: string) {
+	console.log('/cancel_payment_intent', id)
+	return await stripe.paymentIntents.cancel(id)
+}
+
+// app.post('/capture_payment_intent', async (req, res) => {
+export async function capturePaymentIntent(id: string) {
+	return await stripe.paymentIntents.capture(id)
+}
