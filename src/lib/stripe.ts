@@ -65,10 +65,11 @@ export async function createTerminalPaymentIntent(amount: number, email: string,
 	console.log('/create_payment_intent', amount, email, description)
 	try {
 		const intent = await stripe.paymentIntents.create({
-			amount: Math.ceil(amount * 100), // Convert to cents
+			amount, // Convert to cents
 			currency: 'usd',
 			payment_method_types: ['card_present'],
 			capture_method: 'manual',
+			// capture_method: 'automatic',
 			receipt_email: email?.length ? email : undefined,
 			description: description?.length ? description : undefined,
 		})

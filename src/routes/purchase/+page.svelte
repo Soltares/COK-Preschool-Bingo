@@ -74,10 +74,25 @@
 						No entry tickets were added to the cart. Please be aware that you will not be able to play BINGO without having purchased a Bingo Entry Ticket.
 					{/if}
 				</div>
-				<button class="wideBtn !w-32 !text-sm !p-2 !px-4" onclick={() => history.back()}>Adjust Items</button>
 			</div>
 			<div>
-				<Checkout {cart} />
+				<Checkout
+					{cart}
+					onCheckout={async (invoice) => {
+						const response = await fetch('/stripe/checkout', {
+							method: 'POST',
+							headers: { 'Content-Type': 'application/json' },
+							body: JSON.stringify(invoice),
+						})
+
+						const { url } = await response.json()
+						if (url) {
+							// Redirect the user to Stripe
+							window.location.href = url
+						}
+					}}
+					onCancel={() => history.back()}
+				/>
 			</div>
 		</div>
 	{/if}

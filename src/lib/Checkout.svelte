@@ -1,12 +1,21 @@
 <script lang="ts">
 	import { formatCents, itemIndex, type InvoiceItem, type Item } from '$lib'
 
-	type Props = { cart: Record<string, number> }
+	type Props = { cart: Record<string, number>; onCancel?: () => void; onCheckout?: (invoice: InvoiceItem[], total: number) => void; writeIn?: { label: string; price: number } }
 	const props: Props = $props()
 
 	export const invoice: InvoiceItem[] = Object.entries(props.cart)
 		.map(([name, count]) => ({ name, count, priceCents: itemIndex[name].priceCents, description: itemIndex[name].description }))
 		.filter((item) => item.count)
+
+	if (props.writeIn?.price) {
+		invoice.push({
+			name: props.writeIn.label || 'Write-In',
+			count: 1,
+			priceCents: props.writeIn.price,
+			description: 'Write-In',
+		})
+	}
 
 	const sum = (numbers: number[]) => numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
@@ -15,23 +24,11 @@
 	let total = fee + subtotal
 
 	invoice.push({ name: 'Online Service Fee', count: 1, priceCents: fee })
-
-	async function beginCheckout() {
-		const response = await fetch('/stripe/checkout', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify(invoice),
-		})
-
-		const { url } = await response.json()
-		if (url) {
-			// Redirect the user to Stripe
-			window.location.href = url
-		}
-	}
 </script>
 
 <div class="overflow-x-auto">
+	<button class="wideBtn !w-32 !text-sm !p-2 !px-4 ml-auto mb-3" onclick={() => props.onCancel?.()}>Adjust Items</button>
+
 	<table class="min-w-full divide-y divide-gray-200">
 		<thead class="bg-indigo-50">
 			<tr>
@@ -72,5 +69,5 @@
 </div>
 
 <div class="mt-8">
-	<button onclick={() => beginCheckout()} class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Checkout</button>
+	<button onclick={() => props.onCheckout?.(invoice, total)} class="wideBtn w-full py-3 px-4 shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Checkout</button>
 </div>
