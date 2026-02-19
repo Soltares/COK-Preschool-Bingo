@@ -1,10 +1,11 @@
 import { type RequestHandler } from '@sveltejs/kit'
-import { checkoutCompleted } from '$lib/stripe'
+import { paymentIntentSucceeded } from '$lib/stripe'
 
 export const POST: RequestHandler = async ({ request }) => {
 	const payload = await request.json()
-	if (payload?.type == 'checkout.session.completed') {
-		checkoutCompleted(payload)
+	if (payload?.type == 'payment_intent.succeeded') {
+		paymentIntentSucceeded(payload)
 	}
+
 	return new Response()
 }

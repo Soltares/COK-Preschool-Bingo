@@ -52,6 +52,17 @@ export function checkoutCompleted(payload: any) {
 	discordSend(`${formatCents(detail.amountCents)} :dollar: ${detail.name} ${detail.email} - ${detail.description}`)
 }
 
+export function paymentIntentSucceeded(payload: any) {
+	const detail = {
+		email: payload?.data?.object?.receipt_email,
+		amountCents: payload?.data?.object?.amount,
+		description: payload?.data?.object?.description,
+	}
+
+	console.log(JSON.stringify({ type: 'paymentIntentSucceeded', ...detail }))
+	discordSend(`${formatCents(detail.amountCents)} :dollar: ${detail.email} - ${detail.description}`)
+}
+
 // app.post('/connection_token', async (req, res) => {
 export async function createTerminalConnection() {
 	let connectionToken = await stripe.terminal.connectionTokens.create()
