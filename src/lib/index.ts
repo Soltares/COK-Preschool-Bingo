@@ -48,6 +48,11 @@ export let currentSponsors = [
 	{ name: 'Divine Sweets and Gifts', logoUrl: '/Divine-Sweets-Logo.png', linkUrl: 'https://divinesweetsandgifts.com/', class: '' },
 	{ name: 'Famous Nails and Spa', logoUrl: '/famous-nails-logo.jpg', linkUrl: 'https://www.facebook.com/p/Famous-Nails-and-Spa-100075982695659/', class: '!rounded-lg' },
 	{ name: 'Cheers Wine & Spirits', logoUrl: '/cheers-wine-and-spirits-logo.jpg', linkUrl: 'https://www.facebook.com/cheersbelair/', class: '!rounded-lg scale-110 brightness-110' },
+	{ name: 'Route 24 Ale House', logoUrl: '/route-24-ale-house-logo.png', linkUrl: 'https://www.route24alehouse.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Lean Kitchen', logoUrl: '/lean-kitchen-logo.webp', linkUrl: 'https://www.leankitchenco.com/bel-air/', class: '!rounded-lg' },
+	{ name: "Jersey Mike's Subs", logoUrl: '/jersey-mikes-subs-logo.svg', linkUrl: 'https://www.jerseymikes.com/', class: '!rounded-lg' },
+	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' },
+	{ name: 'Poke Bowl Bel Air', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
 ]
 
 export let pastSponsors = [
