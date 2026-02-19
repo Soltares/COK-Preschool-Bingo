@@ -108,6 +108,19 @@
 		loading="lazy"
 		referrerpolicy="no-referrer-when-downgrade"
 	></iframe>
+
+	<p class="font-bold mt-4">About our Preschool</p>
+	<p>
+		Christ Our King Preschool is a small, private, Christian preschool located in the heart of Bel Air, Maryland. We've been educating Harford County's children since 1973 when a group of church
+		members undertook the lofty goal of creating a preschool in a rapidly growing community. We believe in high-quality education across all disciplines including the arts. Children learn literacy,
+		mathematics, science and social studies through direct instruction and independent exploration. Art, music, dramatic play and sensory experiences are incorporated into all lessons.
+	</p>
+	<p>
+		Christ Our King Preschool is registered with Maryland State Department of Education (MSDE) as a non-public church preschool. We hold a Letter of Compliance (LOC) from the Office of Child Care
+		which is under the auspices of the Maryland State Department of Education (MSDE). All staff members are CPR/First Aid certified and have passed a thorough background review including
+		fingerprinting and a criminal background check.
+	</p>
+	<a href="https://christourkingpreschool.com" target="_blank" rel="noopener noreferrer" class="underline text-bingo-blue">Click here to learn more!</a>
 </div>
 
 <div class="section">
