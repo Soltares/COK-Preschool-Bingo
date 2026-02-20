@@ -19,7 +19,7 @@ export let currentSponsors = [
 	{ name: 'Kinetic Ninja Warrior', logoUrl: '/kinetic-ninja-warrior-logo.png', linkUrl: 'https://kineticninjawarrior.com/', class: '!rounded-none' },
 	{ name: 'Coca-Cola', logoUrl: '/coca-cola-logo.webp', linkUrl: 'https://www.coca-cola.com/us/en', class: '!rounded-none' },
 	{ name: 'Oriental Trading', logoUrl: '/oriental-trading-logo.svg', linkUrl: 'https://www.orientaltrading.com/', class: 'bg-[#1490c0] px-2 !rounded-lg' },
-	{ name: 'Herrs', logoUrl: '/herrs-logo.png', linkUrl: 'https://www.herrs.com/', class: '!rounded-none' },
+	{ name: "Herr's", logoUrl: '/herrs-logo.png', linkUrl: 'https://www.herrs.com/', class: '!rounded-none' },
 	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
 	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo.png', linkUrl: 'https://www.ssorchestra.org/', class: 'scale-150 !rounded-none' },
 	{ name: 'STAR Centre', logoUrl: '/star-centre-logo.png', linkUrl: 'https://starcentremd.com/', class: '!rounded-lg bg-[rgb(33,64,154)] p-2 scale-110' },
@@ -53,6 +53,16 @@ export let currentSponsors = [
 	{ name: "Jersey Mike's Subs", logoUrl: '/jersey-mikes-subs-logo.svg', linkUrl: 'https://www.jerseymikes.com/', class: '!rounded-lg' },
 	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' },
 	{ name: 'Poke Bowl Bel Air', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
+	{
+		name: 'sweetFrog',
+		logoUrl: '/sweet-frog-logo.png',
+		linkUrl: 'https://www.sweetfrog.com/stores/frozen-yogurt-cleancity/35148?utm_source=gmb&utm_medium=gmb&utm_campaign=gmb&utm_id=gmb',
+		class: '!rounded-lg bg-[rgb(225,19,131)] px-2 scale-110',
+	},
+	{ name: 'Ice World', logoUrl: '/ice-world-logo.png', linkUrl: 'https://www.iceworld.com/', class: 'scale-150' },
+	{ name: 'The Nest', logoUrl: '/the-nest-logo.jpg', linkUrl: 'https://www.thenestonmainbelair.com/', class: '!rounded-lg scale-110 bg-white p-1 border' },
+	{ name: "Raising Cane's", logoUrl: '/raising-canes-logo.png', linkUrl: 'https://locations.raisingcanes.com/md/bel-air/336-baltimore-pike', class: '!rounded-lg bg-white border px-2 scale-110' },
+	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3 border' },
 ]
 
 export let pastSponsors = [
