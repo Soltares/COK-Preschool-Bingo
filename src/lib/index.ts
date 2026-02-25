@@ -63,6 +63,19 @@ export let currentSponsors = [
 	{ name: 'The Nest', logoUrl: '/the-nest-logo.jpg', linkUrl: 'https://www.thenestonmainbelair.com/', class: '!rounded-lg scale-110 bg-white p-1 border' },
 	{ name: "Raising Cane's", logoUrl: '/raising-canes-logo.png', linkUrl: 'https://locations.raisingcanes.com/md/bel-air/336-baltimore-pike', class: '!rounded-lg bg-white border px-2 scale-110' },
 	{ name: 'Longwood Gardens', logoUrl: '/longwood-gardens-logo.jpg', linkUrl: 'https://longwoodgardens.org/', class: '!rounded-lg bg-white px-3 border' },
+	{ name: "Richardson's Florist", logoUrl: '/richardsons-logo.png', linkUrl: 'https://www.richardsonsflowersandgifts.com/', class: '!rounded-lg scale-125' },
+	{ name: 'First Watch', logoUrl: '/first-watch-logo.jpg', linkUrl: 'https://firstwatch.com/locations/bel-air', class: '!rounded-none scale-110' },
+	{ name: 'Mission BBQ', logoUrl: '/mission-bbq-logo.png', linkUrl: 'https://mission-bbq.com/', class: '!rounded-none scale-110' },
+	{
+		name: "King's Chinese Carryout",
+		logoUrl: '/kings-chinese-food-logo.jpg',
+		linkUrl: "https://www.doordash.com/store/king's-chinese-carryout-abingdon-25053204/23224354/",
+		class: 'scale-110 border',
+	},
+	{ name: 'Greek Village', logoUrl: '/greek-village-logo.jpg', linkUrl: 'http://greekvillagebelair.com/', class: '!rounded-lg' },
+	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' },
+	{ name: 'Winters Run Golf Club', logoUrl: '/winters-run-golf-club-logo.png', linkUrl: 'https://www.wintersrun.com/', class: '!rounded-lg' },
+	{ name: 'Baltimore Symphony Orchestra', logoUrl: '/bso-logo.png', linkUrl: 'https://www.bsomusic.org/', class: '!rounded-lg bg-[rgb(0,_30,_69)] p-2' },
 ]
 
 export let pastSponsors = [
