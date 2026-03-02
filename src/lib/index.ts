@@ -52,7 +52,7 @@ export let currentSponsors = [
 	{ name: 'Lean Kitchen', logoUrl: '/lean-kitchen-logo.webp', linkUrl: 'https://www.leankitchenco.com/bel-air/', class: '!rounded-lg' },
 	{ name: "Jersey Mike's Subs", logoUrl: '/jersey-mikes-subs-logo.svg', linkUrl: 'https://www.jerseymikes.com/', class: '!rounded-lg' },
 	{ name: 'The Joint Chiropractic', logoUrl: '/the-joint-logo.svg', linkUrl: 'https://www.thejoint.com/maryland/bel-air/bel-air-07021', class: '!rounded-lg bg-[#353835] p-3' },
-	{ name: 'Poke Bowl Bel Air', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
+	{ name: 'Poke Bowl', logoUrl: '/poke-bowl-logo.svg', linkUrl: 'https://www.belairpokebowl.com/', class: '!rounded-lg px-2' },
 	{
 		name: 'sweetFrog',
 		logoUrl: '/sweet-frog-logo.png',
@@ -76,6 +76,20 @@ export let currentSponsors = [
 	{ name: 'BACCO Italian + Wine Bar', logoUrl: '/bacco-logo.png', linkUrl: 'https://www.baccoitalianwinebar.com/', class: '!rounded-lg scale-110 bg-black p-1' },
 	{ name: 'Winters Run Golf Club', logoUrl: '/winters-run-golf-club-logo.png', linkUrl: 'https://www.wintersrun.com/', class: '!rounded-lg' },
 	{ name: 'Baltimore Symphony Orchestra', logoUrl: '/bso-logo.png', linkUrl: 'https://www.bsomusic.org/', class: '!rounded-lg bg-[rgb(0,_30,_69)] p-2' },
+	{ name: 'Mr. V Laser Design', logoUrl: '/mr-v-logo.png', linkUrl: 'https://mrvlaserdesign.com/', class: '!rounded-none' },
+	{ name: 'Rosedale Bank', logoUrl: '/RosedaleBank-V-RGB-2color.png', linkUrl: 'https://rosedale.bank/', class: '!rounded-lg scale-110' },
+	{ name: "Delaware Children's Museum", logoUrl: '/delaware-childrens-museum-logo.webp', linkUrl: 'https://delawarechildrensmuseum.org/', class: '!rounded-lg scale-110' },
+	{ name: 'Weis Markets', logoUrl: '/weis-markets-logo.webp', linkUrl: 'https://www.weismarkets.com/stores/weis-markets-bel-air-172/4291', class: '!rounded-none scale-110' },
+	{
+		name: 'Tropical Smoothie Cafe',
+		logoUrl: '/tropical-smoothie-cafe-logo.png',
+		linkUrl: 'https://locations.tropicalsmoothiecafe.com/md/bel-air/331-baltimore-pike',
+		class: '!rounded-none scale-110',
+	},
+	{ name: 'The Arena Club', logoUrl: '/The-Arena-Club-logo.webp', linkUrl: 'https://www.thearenaclub.com/', class: '!rounded-lg scale-110 bg-[#323232] p-3' },
+	{ name: 'Chopstix', logoUrl: '/chopstix-logo-med.webp', linkUrl: 'https://www.chopstixgourmet.com/', class: '!rounded-none scale-110' },
+	{ name: "Chris Dough's Pizzeria & Bar", logoUrl: '/chris-doughs-pizza-logo.webp', linkUrl: 'https://chrisdoughspizzeria.com/', class: '!rounded-none scale-110' },
+	{ name: 'Imagine Edge Coaching', class: '!rounded-none scale-110' },
 ]
 
 export let pastSponsors = [
