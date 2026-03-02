@@ -89,7 +89,7 @@ export let currentSponsors = [
 	{ name: 'The Arena Club', logoUrl: '/The-Arena-Club-logo.webp', linkUrl: 'https://www.thearenaclub.com/', class: '!rounded-lg scale-110 bg-[#323232] p-3' },
 	{ name: 'Chopstix', logoUrl: '/chopstix-logo-med.webp', linkUrl: 'https://www.chopstixgourmet.com/', class: '!rounded-none scale-110' },
 	{ name: "Chris Dough's Pizzeria & Bar", logoUrl: '/chris-doughs-pizza-logo.webp', linkUrl: 'https://chrisdoughspizzeria.com/', class: '!rounded-none scale-110' },
-	{ name: 'Imagine Edge Coaching', class: '!rounded-none scale-110' },
+	{ name: 'Inspired Edge Coaching', logoUrl: '/inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' },
 ]
 
 export let pastSponsors = [
