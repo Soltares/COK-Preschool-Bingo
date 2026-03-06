@@ -90,6 +90,10 @@ export let currentSponsors = [
 	{ name: 'Chopstix', logoUrl: '/chopstix-logo-med.webp', linkUrl: 'https://www.chopstixgourmet.com/', class: '!rounded-none scale-110' },
 	{ name: "Chris Dough's Pizzeria & Bar", logoUrl: '/chris-doughs-pizza-logo.webp', linkUrl: 'https://chrisdoughspizzeria.com/', class: '!rounded-none scale-110' },
 	{ name: 'Inspired Edge Coaching', logoUrl: '/inspired-edge-logo.png', linkUrl: 'https://inspirededgecoaching.com/', class: '!rounded-none scale-150' },
+	{ name: 'Wine World Beer & Spirits', logoUrl: 'wine-world-logo.avif', linkUrl: 'https://www.mywineworld.com/', class: '!rounded-lg scale-110' },
+	{ name: 'Philly Pretzel Factory', logoUrl: '/philly-pretzel-factory-logo.webp', linkUrl: 'https://phillypretzelfactory.com/locations/bel-air-md/', class: '!rounded-lg' },
+	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
+	{ name: 'Aruba Sun & Spa', logoUrl: '/aruba-sun-and-spa-logo.png', linkUrl: 'http://www.arubasunandspa.com/', class: '!rounded-none scale-110' },
 ]
 
 export let pastSponsors = [
