@@ -94,8 +94,15 @@ export let currentSponsors = [
 	{ name: 'Philly Pretzel Factory', logoUrl: '/philly-pretzel-factory-logo.webp', linkUrl: 'https://phillypretzelfactory.com/locations/bel-air-md/', class: '!rounded-lg' },
 	{ name: 'Pappas', logoUrl: 'pappas-logo.avif', linkUrl: 'https://www.pappasbelair.com/', class: '!rounded-none' },
 	{ name: 'Aruba Sun & Spa', logoUrl: '/aruba-sun-and-spa-logo.png', linkUrl: 'http://www.arubasunandspa.com/', class: '!rounded-none scale-110' },
+	{ name: 'Wayback Burgers', logoUrl: 'wayback-burgers-logo.svg', linkUrl: 'https://waybackburgers.com/locations/us/maryland/bel-air/', class: '!rounded-lg scale-110 bg-[#212721] px-3' },
+	{ name: 'Friendship Wine & Liquor', logoUrl: '/friendship-wine-and-liquor.jpg', linkUrl: 'https://www.friendshipwine.com/', class: 'scale-125 border' },
+	{ name: "BJ's", logoUrl: '/bjs-logo.svg', linkUrl: 'https://www.bjs.com/', class: '!rounded-none' },
+	{ name: 'Key Point Health Services', logoUrl: '/key-point-health-services-logo.svg', linkUrl: 'https://www.keypoint.org/', class: '!rounded-none scale-125' },
 ]
 
+/**
+ * Past Sponsors
+ */
 export let pastSponsors = [
 	{ name: 'Christ Our King Presbyterian Church', logoUrl: '/cok-logo.png', linkUrl: 'https://christourking.net/' },
 	{ name: 'ReckTech, LLC', logoUrl: '/recktech-logo.png', linkUrl: 'https://recktech.co' },
