@@ -98,6 +98,8 @@ export let currentSponsors = [
 	{ name: 'Friendship Wine & Liquor', logoUrl: '/friendship-wine-and-liquor.jpg', linkUrl: 'https://www.friendshipwine.com/', class: 'scale-125 border' },
 	{ name: "BJ's", logoUrl: '/bjs-logo.svg', linkUrl: 'https://www.bjs.com/', class: '!rounded-none' },
 	{ name: 'Key Point Health Services', logoUrl: '/key-point-health-services-logo.svg', linkUrl: 'https://www.keypoint.org/', class: '!rounded-none scale-125' },
+	{ name: 'Orange Theory Fitness', logoUrl: '/orange-theory-fitness-logo.svg', linkUrl: 'https://www.orangetheory.com/en-us', class: '!rounded-lg' },
+	{ name: 'Harford Communitiy College', logoUrl: '/hcc-logo.png', linkUrl: 'https://www.harford.edu/', class: '!rounded-lg bg-blue-950 px-2' },
 ]
 
 /**
