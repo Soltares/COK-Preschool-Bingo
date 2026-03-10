@@ -122,6 +122,7 @@
 
 				status = `Transaction: ${data?.status}`
 				view = 'products'
+				resetCart()
 			}
 		}
 	}
