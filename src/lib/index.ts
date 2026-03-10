@@ -227,10 +227,24 @@ export let contacts = [
 ]
 
 export const items = [
-	{ name: 'Bingo Entry Ticket', priceCents: 3000, description: 'Entry ticket for 1 adult (18+) to the COK Bingo event! Includes 20 games, 3 bingo squares per game.' },
-	{ name: 'Extra Bingo Games', priceCents: 1000, description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.' },
-	{ name: 'Special Game', priceCents: 500, description: 'A special rules bingo game. The prizes are bigger and better! Includes 1 game, 1 square.' },
-	{ name: 'Special Games (5-Pack)', priceCents: 2000, description: 'Pack of 5 special rules bingo games. The prizes are bigger and better! Includes all 5 special games, 1 square per game.' },
+	{ available: true, name: 'Bingo Entry Ticket', priceCents: 3000, description: 'Entry ticket for 1 adult (18+) to the COK Bingo event! Includes 20 games, 3 bingo squares per game.' },
+	{
+		available: true,
+		name: 'Extra Bingo Games',
+		priceCents: 1000,
+		description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.',
+	},
+	{ available: true, name: 'Special Game', priceCents: 500, description: 'A special rules bingo game. The prizes are bigger and better! Includes 1 game, 1 square.' },
+	{
+		available: true,
+		name: 'Special Games (5-Pack)',
+		priceCents: 2000,
+		description: 'Pack of 5 special rules bingo games. The prizes are bigger and better! Includes all 5 special games, 1 square per game.',
+	},
+	{ name: 'Dauber', priceCents: 200 },
+	{ name: 'Raffle Ticket', priceCents: 100 },
+	{ name: '7 Raffle Tickets', priceCents: 500 },
+	{ name: '25 Raffle Tickets', priceCents: 2000 },
 ]
 export type Item = (typeof items)[number]
 export const itemIndex = Object.fromEntries(items.map((item) => [item.name, item]))

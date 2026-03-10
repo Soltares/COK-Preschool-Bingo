@@ -20,6 +20,7 @@
 		writeInAmount = undefined
 		items.forEach((item) => (cart[item.name] = 0))
 		paymentIntent = undefined
+		if (view != 'terminals') view = 'products'
 	}
 
 	async function onFetchConnectionToken() {
@@ -169,7 +170,7 @@
 {/if}
 
 {#if view == 'products'}
-	<form {onsubmit} class="my-2 space-y-6 overflow-auto flex flex-col h-full">
+	<form {onsubmit} class="my-2 space-y-6 overflow-auto flex flex-col h-full pr-5">
 		{#each items as item}
 			<div class="flex items-center justify-between border-b pb-4 gap-4">
 				<div>

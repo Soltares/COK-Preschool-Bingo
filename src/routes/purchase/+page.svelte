@@ -33,7 +33,7 @@
 	{:else if !review}
 		<!-- Product Catalog -->
 		<form {onsubmit} class="space-y-6">
-			{#each items as item}
+			{#each items.filter((i) => i.available) as item}
 				<div class="flex items-center justify-between border-b pb-4 gap-4">
 					<div>
 						<label for="bingo-ticket-qty" class="text-xl font-semibold text-gray-900 block">{item.name} - {formatCents(item.priceCents)}</label>
