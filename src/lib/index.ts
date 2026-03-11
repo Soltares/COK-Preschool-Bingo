@@ -21,7 +21,7 @@ export let currentSponsors = [
 	{ name: 'Oriental Trading', logoUrl: '/oriental-trading-logo.svg', linkUrl: 'https://www.orientaltrading.com/', class: 'bg-[#1490c0] px-2 !rounded-lg' },
 	{ name: "Herr's", logoUrl: '/herrs-logo.png', linkUrl: 'https://www.herrs.com/', class: '!rounded-none' },
 	{ name: 'Chick-fil-A', logoUrl: '/chick-fil-a-logo.jpg', linkUrl: 'https://www.chick-fil-a.com/locations/md/bel-air' },
-	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo.png', linkUrl: 'https://www.ssorchestra.org/', class: 'scale-150 !rounded-none' },
+	{ name: 'Susquehanna Symphony Orchestra', logoUrl: '/sso-logo-2.png', linkUrl: 'https://www.ssorchestra.org/', class: '!rounded-none' },
 	{ name: 'STAR Centre', logoUrl: '/star-centre-logo.png', linkUrl: 'https://starcentremd.com/', class: '!rounded-lg bg-[rgb(33,64,154)] p-2 scale-110' },
 	{ name: 'Utz', logoUrl: '/utz-logo.svg', linkUrl: 'https://www.utzsnacks.com/', class: '!rounded-lg scale-110 border' },
 	{ name: 'Ladew Topiary Gardens', logoUrl: '/ladew-gardens-logo.png', linkUrl: 'https://ladewgardens.com/', class: '!rounded-lg bg-[rgb(98,_136,_63)] px-2' },
@@ -100,6 +100,7 @@ export let currentSponsors = [
 	{ name: 'Key Point Health Services', logoUrl: '/key-point-health-services-logo.svg', linkUrl: 'https://www.keypoint.org/', class: '!rounded-none scale-125' },
 	{ name: 'Orange Theory Fitness', logoUrl: '/orange-theory-fitness-logo.svg', linkUrl: 'https://www.orangetheory.com/en-us', class: '!rounded-lg' },
 	{ name: 'Harford Communitiy College', logoUrl: '/hcc-logo.png', linkUrl: 'https://www.harford.edu/', class: '!rounded-lg bg-blue-950 px-2' },
+	{ name: 'Lauren Merryman' },
 ]
 
 /**
