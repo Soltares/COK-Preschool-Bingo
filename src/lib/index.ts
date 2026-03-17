@@ -101,6 +101,8 @@ export let currentSponsors = [
 	{ name: 'Orange Theory Fitness', logoUrl: '/orange-theory-fitness-logo.svg', linkUrl: 'https://www.orangetheory.com/en-us', class: '!rounded-lg' },
 	{ name: 'Harford Communitiy College', logoUrl: '/hcc-logo.png', linkUrl: 'https://www.harford.edu/', class: '!rounded-lg bg-blue-950 px-2' },
 	{ name: 'Lauren Merryman' },
+	{ name: 'Ferguson Golf Institute', logoUrl: '/fgi-logo.avif', linkUrl: 'https://www.fgigolf.com/', class: '!rounded-none scale-125' },
+	{ name: 'Hooks N Crooks' },
 ]
 
 /**
@@ -246,6 +248,7 @@ export const items = [
 	{ name: 'Raffle Ticket', priceCents: 100 },
 	{ name: '7 Raffle Tickets', priceCents: 500 },
 	{ name: '25 Raffle Tickets', priceCents: 2000 },
+	{ name: 'Pull Tab', priceCents: 100 },
 ]
 export type Item = (typeof items)[number]
 export const itemIndex = Object.fromEntries(items.map((item) => [item.name, item]))
