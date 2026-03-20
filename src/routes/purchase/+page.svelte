@@ -4,6 +4,7 @@
 	import Checkout from '$lib/Checkout.svelte'
 	import { onMount } from 'svelte'
 
+	let enableTicketSales = import.meta.env.VITE_ENABLE_TICKET_SALES == 1
 	let agreeAdults = $state(false)
 	let review = $state(false)
 	const cart: Record<string, number> = $state({})
@@ -25,7 +26,9 @@
 <div id="buy" class="section h-full grow">
 	<h1>PURCHASE TICKETS AND EXTRAS</h1>
 
-	{#if !agreeAdults}
+	{#if !enableTicketSales}
+		<p class="text-xl">Online ticket sales for this year have been closed. Additional tickets may be available at the door at the day of the event. Thank you!</p>
+	{:else if !agreeAdults}
 		<!-- Accept 18+ ? -->
 		<p>Due to the nature of this event, participants are required to be of <span class="font-bold"> 18 years of age or older.</span></p>
 		<img alt="Adults Only BINGO Fun!" class="max-w-xs mx-auto rounded-full shadow-md shadow-black/50" src="AdultsOnlyBingo512.png" />
