@@ -11,7 +11,7 @@
 			Christ Our King Preschool. <br />
 			10 Lexington Rd <br />
 			Bel Air, MD 21014 <br />
-			Copyright 2026. All Rights Reserved.
+			Copyright {new Date().getFullYear()}. All Rights Reserved.
 		</div>
 	</div>
 </footer>

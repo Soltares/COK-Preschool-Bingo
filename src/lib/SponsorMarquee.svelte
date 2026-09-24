@@ -1,9 +1,11 @@
 <script>
+	import { shuffle } from '$lib'
 	import { onMount } from 'svelte'
 
 	export let list = []
 	let container
 	let scrollInterval
+	let shuffledList = []
 
 	const startAutoScroll = () => {
 		scrollInterval = setInterval(() => {
@@ -20,6 +22,7 @@
 
 	onMount(() => {
 		startAutoScroll()
+		shuffledList = shuffle(list)
 		return () => clearInterval(scrollInterval)
 	})
 
@@ -29,7 +32,7 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div bind:this={container} class="flex overflow-x-auto snap-x snap-mandatory gap-6 py-6 no-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
-	{#each list as sponsor}
+	{#each shuffle(shuffledList) as sponsor (sponsor)}
 		<div class="snap-center shrink-0">
 			<svelte:element
 				this={sponsor.linkUrl ? 'a' : 'div'}

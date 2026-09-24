@@ -6,7 +6,7 @@
 	<h1>BINGO NIGHT - FAQ</h1>
 
 	<h2>When and where is Bingo Night?</h2>
-	<p>Our Bingo Fundraiser will be held on March 20th at Christ Our King Preschool. Doors open prior to gameplay so you can get settled, grab food, and purchase extras before the first game begins.</p>
+	<p>Our Bingo Fundraiser will be held on March 12th at Christ Our King Preschool. Doors open prior to gameplay so you can get settled, grab food, and purchase extras before the first game begins.</p>
 
 	<hr />
 
@@ -15,7 +15,7 @@
 	<p>We offer several convenient payment options:</p>
 	<div class="grid grid-cols-[auto_1fr] gap-x-4 items-center">
 		<div class="font-bold">In person:</div>
-		<div>Cash or check can be dropped off at the church office or given directly to Colleen</div>
+		<div>Cash or check can be dropped off at the church office or given directly to Jennifer Palmer</div>
 		<div class="font-bold">Online:</div>
 		<div>
 			<a class="text-blue-600 underline" href="/purchase#buy">Tickets</a> and <a class="text-blue-600 underline" href={urlDonate}>donations</a> can be purchased securely through our website
