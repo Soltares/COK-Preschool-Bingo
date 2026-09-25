@@ -4,7 +4,7 @@
 	import Checkout from '$lib/Checkout.svelte'
 
 	let terminal: any
-	const simulated = false
+	const simulated = import.meta.env.VITE_SIMULATED_TERMINAL == '1'
 	let cart: Record<string, number> = $state({})
 	let discoveredReaders = $state([])
 	let view = $state<'terminals' | 'products' | 'checkout' | 'payment'>('terminals')

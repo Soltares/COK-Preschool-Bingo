@@ -41,7 +41,7 @@
 	<p>Yes! Come hungry 😊</p>
 	<div class="grid grid-cols-[auto_1fr] gap-x-4 items-center">
 		<div class="font-bold">Food Trucks:</div>
-		<div>Vagabond’s Food Truck and Box Hill Pizzeria</div>
+		<div>We are hoping to have at least two food trucks available in the parking lot available for the community to enjoy!</div>
 		<div class="font-bold">Concessions:</div>
 		<div>Desserts and drinks will be available for purchase at our concession stand</div>
 	</div>

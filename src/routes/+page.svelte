@@ -78,6 +78,9 @@
 			<p>Please send ticket requests to {contacts[0]?.email}</p>
 		</a>
 	{/if}
+
+	<!-- <p>Want to help sponsor the event and the Preschool? A direct donation is greatly appreciated. Use the button below to support our cause!</p> -->
+	<!-- <a href={urlDonate} class="wideBtn"> DONATE NOW </a> -->
 </div>
 
 <div id="food" class="section">
@@ -138,8 +141,6 @@
 <div class="section">
 	<h1>VOLUNTEERS</h1>
 	<p>Interested in volunteering? <a class="text-bingo-blue underline" href="/volunteer#help">Click here</a> for more information!</p>
-	<p>Want to help sponsor? A direct donation is greatly appreciated. Use the button below to support our cause!</p>
-	<a href={urlDonate} class="wideBtn"> DONATE NOW </a>
 </div>
 
 <Contact />

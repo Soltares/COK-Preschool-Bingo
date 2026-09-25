@@ -1,12 +1,15 @@
 <script lang="ts">
+	import { urlDonate } from '$lib'
+
 	let enableTicketSales = import.meta.env.VITE_ENABLE_TICKET_SALES == 1
 	let navLinks: any[] = [
 		// { href: '/#', label: 'HOME', className: 'hidden sm:block' },
-		{ href: '/#about', label: 'ABOUT' },
+		// { href: '/#about', label: 'ABOUT' },
 		{ href: '/#tickets', label: 'TICKETS' },
-		{ href: '/#food', label: 'FOOD' },
-		{ href: '/#where', label: 'WHERE' },
+		// { href: '/#food', label: 'FOOD' },
+		// { href: '/#where', label: 'WHERE' },
 		{ href: '/volunteer#help', label: 'VOLUNTEER' },
+		{ href: urlDonate, label: 'DONATE', className: 'bg-bingo-blue !text-white shadow-[inset_0_0_0_3px_theme(colors.black)]' },
 	]
 
 	if (enableTicketSales) navLinks.push({ href: '/purchase#buy', label: 'PURCHASE', className: 'bg-bingo-yellow !text-black shadow-[inset_0_0_0_3px_theme(colors.black)]' })

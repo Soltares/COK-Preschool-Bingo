@@ -252,7 +252,8 @@ export let trucks = [
 
 export let contacts = [
 	{ name: 'Rebecca Wood - Bingo Chair', email: 'bingo@christourking.net', phone: '609-213-2310' },
-	{ name: 'Jennifer Palmer', email: 'prekdirector@christourking.net', phone: '410-836-0141' },
+	{ name: 'Amy Taylor - Bingo Chair', email: 'bingo@christourking.net' },
+	{ name: 'Jennifer Palmer - Director', email: 'prekdirector@christourking.net', phone: '410-836-0141' },
 ]
 
 export const items = [
@@ -263,12 +264,12 @@ export const items = [
 		priceCents: 1000,
 		description: 'Additional regular games. Must have purchased a Bingo Entry Ticket to play. Includes 20 games, 3 bingo squares per game.',
 	},
-	{ available: true, name: 'Special Game', priceCents: 500, description: 'A special rules bingo game. The prizes are bigger and better! Includes 1 game, 1 square.' },
+	// { available: true, name: 'Special Game', priceCents: 500, description: 'A special rules bingo game. The prizes are bigger and better! Includes 1 game, 1 square.' },
 	{
 		available: true,
 		name: 'Special Games (5-Pack)',
 		priceCents: 2000,
-		description: 'Pack of 5 special rules bingo games. The prizes are bigger and better! Includes all 5 special games, 1 square per game.',
+		description: 'Pack of 5 special rules bingo games. The prizes are bigger and better! Includes each of the 5 special games, 1 square per game.',
 	},
 	{ name: 'Dauber', priceCents: 200 },
 	{ name: 'Raffle Ticket', priceCents: 100 },
